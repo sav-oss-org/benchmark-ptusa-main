@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792052530561,
+  "lastUpdate": 1792068471191,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -119028,6 +119028,38 @@ window.BENCHMARK_DATA = {
             "value": 112.9064196342646,
             "unit": "us/iter",
             "extra": "iterations: 6234\ncpu: 112.35006689124158 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "d7ab1f88b4a4eccc19025e810304a0700c1c276c",
+          "message": "Bump deps/open62541/open62541 from `d1173cc` to `05c2b38`",
+          "timestamp": "2026-10-15T08:16:41Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1470/commits/d7ab1f88b4a4eccc19025e810304a0700c1c276c"
+        },
+        "date": 1792068470554,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.74057537507887,
+            "unit": "us/iter",
+            "extra": "iterations: 70985\ncpu: 9.73982510389519 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 79.29128687113932,
+            "unit": "us/iter",
+            "extra": "iterations: 9879\ncpu: 78.53139771231906 us\nthreads: 1"
           }
         ]
       }
