@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792050571964,
+  "lastUpdate": 1792052530561,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -118992,6 +118992,42 @@ window.BENCHMARK_DATA = {
             "value": 109.39906787974152,
             "unit": "us/iter",
             "extra": "iterations: 6320\ncpu: 108.7674186708861 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ecc3679720d93b8771109e54e8002fc8e187b8c6",
+          "message": "[config][github actions] Changes organization name (#1474)\n\n Changes `GitHub` organization to `sav-oss-org`.",
+          "timestamp": "2026-10-15T11:16:35+03:00",
+          "tree_id": "90dab9b6ecba2d1f42abe29ccc48075af982e267",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/ecc3679720d93b8771109e54e8002fc8e187b8c6"
+        },
+        "date": 1792052529829,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.670114046893122,
+            "unit": "us/iter",
+            "extra": "iterations: 42351\ncpu: 16.665364737550473 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 112.9064196342646,
+            "unit": "us/iter",
+            "extra": "iterations: 6234\ncpu: 112.35006689124158 us\nthreads: 1"
           }
         ]
       }
