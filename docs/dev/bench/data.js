@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792070887863,
+  "lastUpdate": 1792071434755,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -119224,6 +119224,42 @@ window.BENCHMARK_DATA = {
             "value": 113.8142292374922,
             "unit": "us/iter",
             "extra": "iterations: 6177\ncpu: 113.22992957746477 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4641528dc5e4ae0d2e695e88c4126cec16abf25c",
+          "message": "Bump `deps/lunarmodules/say/say` from `3e1f783` to `06484f6` (#1464)\n\nBumps [deps/lunarmodules/say/say](https://github.com/lunarmodules/say) from `3e1f783` to `06484f6`.\n- [Release notes](https://github.com/lunarmodules/say/releases)\n- [Commits](https://github.com/lunarmodules/say/compare/3e1f783d0aa496eb21d16e85b2235335cb9332df...06484f676e170e822a4b3ff936f8ab15b7541178)\n\n---\nupdated-dependencies:\n- dependency-name: deps/lunarmodules/say/say\n  dependency-version: '06484f676e170e822a4b3ff936f8ab15b7541178'\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-10-15T16:33:58+03:00",
+          "tree_id": "3bfc87ac6560bd335265b36b67025f9635d60374",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/4641528dc5e4ae0d2e695e88c4126cec16abf25c"
+        },
+        "date": 1792071433967,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 15.452921146953374,
+            "unit": "us/iter",
+            "extra": "iterations: 45477\ncpu: 15.451223695494429 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 80.61102694679231,
+            "unit": "us/iter",
+            "extra": "iterations: 8758\ncpu: 80.18880589175612 us\nthreads: 1"
           }
         ]
       }
