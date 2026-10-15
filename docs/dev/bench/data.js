@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792070099577,
+  "lastUpdate": 1792070655705,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -119156,6 +119156,38 @@ window.BENCHMARK_DATA = {
             "value": 113.77354511703048,
             "unit": "us/iter",
             "extra": "iterations: 6195\ncpu: 113.26060790960454 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "f8c85c4cc5ded213598983c76871576a593c5d77",
+          "message": "Bump deps/lunarmodules/say/say from `3e1f783` to `06484f6`",
+          "timestamp": "2026-10-15T08:16:41Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1464/commits/f8c85c4cc5ded213598983c76871576a593c5d77"
+        },
+        "date": 1792070654820,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.087878166963186,
+            "unit": "us/iter",
+            "extra": "iterations: 77598\ncpu: 9.087343539781953 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 67.17720050571404,
+            "unit": "us/iter",
+            "extra": "iterations: 10678\ncpu: 66.78487638134483 us\nthreads: 1"
           }
         ]
       }
