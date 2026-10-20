@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792483562454,
+  "lastUpdate": 1792483605319,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -119326,6 +119326,38 @@ window.BENCHMARK_DATA = {
             "value": 113.15817912748601,
             "unit": "us/iter",
             "extra": "iterations: 6487\ncpu: 112.60621350393096 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "b3338b8c4fc939906b3f39c03cc11460c59da38c",
+          "message": "Bump deps/lunarmodules/luafilesystem/luafilesystem from `a186cca` to `146ab45`",
+          "timestamp": "2026-10-15T13:34:04Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1476/commits/b3338b8c4fc939906b3f39c03cc11460c59da38c"
+        },
+        "date": 1792483604839,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.56176790864843,
+            "unit": "us/iter",
+            "extra": "iterations: 42298\ncpu: 16.56067821173578 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 113.62558436085581,
+            "unit": "us/iter",
+            "extra": "iterations: 6407\ncpu: 112.75247510535353 us\nthreads: 1"
           }
         ]
       }
