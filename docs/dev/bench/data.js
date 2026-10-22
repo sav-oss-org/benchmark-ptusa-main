@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792676862054,
+  "lastUpdate": 1792677732306,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -119596,6 +119596,42 @@ window.BENCHMARK_DATA = {
             "value": 113.78026228182671,
             "unit": "us/iter",
             "extra": "iterations: 6188\ncpu: 113.25152133160958 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a3e609e1c9eea9e21b35b08ded2d82033f4faa68",
+          "message": "Bump `luafilesystem` (#1476)\n\nBumps [deps/lunarmodules/luafilesystem/luafilesystem](https://github.com/lunarmodules/luafilesystem) from `a186cca` to `146ab45`.\n- [Release notes](https://github.com/lunarmodules/luafilesystem/releases)\n- [Commits](https://github.com/lunarmodules/luafilesystem/compare/a186cca5833691e830ed255e38ace8ff6b870dbf...146ab458e821cd7617892099fe8e6e399b46185c)\n\n---\nupdated-dependencies:\n- dependency-name: deps/lunarmodules/luafilesystem/luafilesystem\n  dependency-version: 146ab458e821cd7617892099fe8e6e399b46185c\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Dzmitry Ivaniuk <dzimitriy@gmail.com>",
+          "timestamp": "2026-10-22T13:58:59Z",
+          "tree_id": "1c9f364a6ac67da51a9ff2e0db45fd4f09a7dea8",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/a3e609e1c9eea9e21b35b08ded2d82033f4faa68"
+        },
+        "date": 1792677731940,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.57442728110983,
+            "unit": "us/iter",
+            "extra": "iterations: 42293\ncpu: 16.573993663253965 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 110.59144621200109,
+            "unit": "us/iter",
+            "extra": "iterations: 6349\ncpu: 110.5816826271854 us\nthreads: 1"
           }
         ]
       }
