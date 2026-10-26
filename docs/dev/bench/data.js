@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793029847297,
+  "lastUpdate": 1793037358666,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -119730,6 +119730,38 @@ window.BENCHMARK_DATA = {
             "value": 67.93659567638917,
             "unit": "us/iter",
             "extra": "iterations: 10593\ncpu: 67.41645020296421 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "05d237326dc2fd51e1c9297db3f5a5870b68f1f7",
+          "message": "[WIP] Fix error opening NVRAM file on version 2026",
+          "timestamp": "2026-10-22T14:16:54Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1481/commits/05d237326dc2fd51e1c9297db3f5a5870b68f1f7"
+        },
+        "date": 1793037358039,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 10.523177970889805,
+            "unit": "us/iter",
+            "extra": "iterations: 65477\ncpu: 10.522020175023291 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 79.91643426427105,
+            "unit": "us/iter",
+            "extra": "iterations: 9059\ncpu: 79.47544762115024 us\nthreads: 1"
           }
         ]
       }
