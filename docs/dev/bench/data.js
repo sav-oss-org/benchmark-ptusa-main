@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792677732306,
+  "lastUpdate": 1792982929207,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -119632,6 +119632,38 @@ window.BENCHMARK_DATA = {
             "value": 110.59144621200109,
             "unit": "us/iter",
             "extra": "iterations: 6349\ncpu: 110.5816826271854 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "4499c0502d62ded4ae7f15b79937de90dd7727bb",
+          "message": "Bump the codeql-actions group with 2 updates",
+          "timestamp": "2026-10-22T14:16:54Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1479/commits/4499c0502d62ded4ae7f15b79937de90dd7727bb"
+        },
+        "date": 1792982928853,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 12.533221267454312,
+            "unit": "us/iter",
+            "extra": "iterations: 55860\ncpu: 12.531657303974221 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 87.84162939539709,
+            "unit": "us/iter",
+            "extra": "iterations: 7906\ncpu: 87.39448077409561 us\nthreads: 1"
           }
         ]
       }
