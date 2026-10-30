@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793037358666,
+  "lastUpdate": 1793370344440,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -119762,6 +119762,38 @@ window.BENCHMARK_DATA = {
             "value": 79.91643426427105,
             "unit": "us/iter",
             "extra": "iterations: 9059\ncpu: 79.47544762115024 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "84b4ff950b9c69e9ae115f4719efc2caee30e9b3",
+          "message": "[config][cmake] Adds `AXC F 2000` support",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1482/commits/84b4ff950b9c69e9ae115f4719efc2caee30e9b3"
+        },
+        "date": 1793370343884,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.601224466572006,
+            "unit": "us/iter",
+            "extra": "iterations: 42180\ncpu: 16.595418065433858 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 112.12072630407057,
+            "unit": "us/iter",
+            "extra": "iterations: 6288\ncpu: 112.07098107506359 us\nthreads: 1"
           }
         ]
       }
