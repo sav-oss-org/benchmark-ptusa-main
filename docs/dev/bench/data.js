@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793620735277,
+  "lastUpdate": 1793638918124,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -120318,6 +120318,38 @@ window.BENCHMARK_DATA = {
             "value": 111.91746586730653,
             "unit": "us/iter",
             "extra": "iterations: 6255\ncpu: 111.87998081534775 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "65f4a11128a5b106e92b8ae66381152adfc60e27",
+          "message": "[config][github actions] Updates `Sonar` scanner version from `7.2.0.5079` to `8.3.1.16491`",
+          "timestamp": "2026-11-02T10:09:47Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1487/commits/65f4a11128a5b106e92b8ae66381152adfc60e27"
+        },
+        "date": 1793638917579,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 15.92356227102038,
+            "unit": "us/iter",
+            "extra": "iterations: 43945\ncpu: 15.92170026169075 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 111.92691735137673,
+            "unit": "us/iter",
+            "extra": "iterations: 6207\ncpu: 111.91820573545998 us\nthreads: 1"
           }
         ]
       }
