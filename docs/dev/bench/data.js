@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793684752374,
+  "lastUpdate": 1793685882746,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -120584,6 +120584,38 @@ window.BENCHMARK_DATA = {
             "value": 73.01531835977448,
             "unit": "us/iter",
             "extra": "iterations: 9706\ncpu: 73.0016446527921 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "9140dda98ca52043d82837c0755e7b08b9f475e3",
+          "message": "[cmake] Enables `IPO` for PLCnext builds",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1486/commits/9140dda98ca52043d82837c0755e7b08b9f475e3"
+        },
+        "date": 1793685882233,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 15.283717934758648,
+            "unit": "us/iter",
+            "extra": "iterations: 45922\ncpu: 15.283318213492443 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 90.30674789810276,
+            "unit": "us/iter",
+            "extra": "iterations: 7969\ncpu: 90.30543957836616 us\nthreads: 1"
           }
         ]
       }
