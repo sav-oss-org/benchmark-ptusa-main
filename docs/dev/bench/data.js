@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793682873228,
+  "lastUpdate": 1793684118741,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -120416,6 +120416,42 @@ window.BENCHMARK_DATA = {
             "value": 75.2063212591652,
             "unit": "us/iter",
             "extra": "iterations: 9276\ncpu: 75.19328007761966 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e7e6d9a0956d80bd71913b764049f3dd55a2e64a",
+          "message": "Updates `Sonar` scanner version from `7.2.0.5079` to `8.3.1.16491` (#1487)",
+          "timestamp": "2026-11-03T08:32:29+03:00",
+          "tree_id": "e4a541fe255ac84968e588f57ec91d5a655a788e",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/e7e6d9a0956d80bd71913b764049f3dd55a2e64a"
+        },
+        "date": 1793684118189,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 15.164844882613135,
+            "unit": "us/iter",
+            "extra": "iterations: 45746\ncpu: 15.164271127530276 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.57340758515979,
+            "unit": "us/iter",
+            "extra": "iterations: 8543\ncpu: 82.56990120566546 us\nthreads: 1"
           }
         ]
       }
