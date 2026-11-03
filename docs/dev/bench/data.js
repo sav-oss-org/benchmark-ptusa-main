@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793686064831,
+  "lastUpdate": 1793686248515,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -120680,6 +120680,42 @@ window.BENCHMARK_DATA = {
             "value": 87.20944285000868,
             "unit": "us/iter",
             "extra": "iterations: 8014\ncpu: 87.18538881956576 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "068cf07f1146b7dd096bbc983ae247b15b1354a6",
+          "message": "Enables `IPO` for PLCnext builds (#1486)\n\nFunction check_ipo_supported runs a project-mode try_compile in a fresh\nprocess, where SDK toolchain variables are not inherited without\nthe preset environment. Defining the variable in the base preset\nskips the check and enables whole-program LTO.",
+          "timestamp": "2026-11-03T06:08:20Z",
+          "tree_id": "20d4bade8aa8eb264d6dc8417b6c7ce0a34b3699",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/068cf07f1146b7dd096bbc983ae247b15b1354a6"
+        },
+        "date": 1793686248124,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.593345178607303,
+            "unit": "us/iter",
+            "extra": "iterations: 59236\ncpu: 9.592629093794313 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 68.04095437707302,
+            "unit": "us/iter",
+            "extra": "iterations: 10258\ncpu: 68.03331399883018 us\nthreads: 1"
           }
         ]
       }
