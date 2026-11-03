@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793689626481,
+  "lastUpdate": 1793705484384,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -120816,6 +120816,38 @@ window.BENCHMARK_DATA = {
             "value": 78.68318180883806,
             "unit": "us/iter",
             "extra": "iterations: 9730\ncpu: 78.66259640287771 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "b19a1b4123d8c1d1ed63e4ae225dd8def3a8c44a",
+          "message": "Fall back to direct write in SRAM::safe_save() when temp file can't be created",
+          "timestamp": "2026-11-03T07:04:40Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1481/commits/b19a1b4123d8c1d1ed63e4ae225dd8def3a8c44a"
+        },
+        "date": 1793705483892,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 12.296944009548227,
+            "unit": "us/iter",
+            "extra": "iterations: 56974\ncpu: 12.296011654438868 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 88.88230216010378,
+            "unit": "us/iter",
+            "extra": "iterations: 7870\ncpu: 88.87971435832273 us\nthreads: 1"
           }
         ]
       }
