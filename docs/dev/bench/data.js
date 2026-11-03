@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793646575386,
+  "lastUpdate": 1793682873228,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -120384,6 +120384,38 @@ window.BENCHMARK_DATA = {
             "value": 76.97139138082744,
             "unit": "us/iter",
             "extra": "iterations: 9096\ncpu: 76.95726363236588 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "bba9113cce78dd28875043a18bc490237087d116",
+          "message": "[config][cmake] Adds `AXCF2000EA`",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1482/commits/bba9113cce78dd28875043a18bc490237087d116"
+        },
+        "date": 1793682872608,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 10.078624751238664,
+            "unit": "us/iter",
+            "extra": "iterations: 72861\ncpu: 10.077778605838516 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 75.2063212591652,
+            "unit": "us/iter",
+            "extra": "iterations: 9276\ncpu: 75.19328007761966 us\nthreads: 1"
           }
         ]
       }
