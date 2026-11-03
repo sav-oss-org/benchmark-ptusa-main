@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793688928152,
+  "lastUpdate": 1793689626481,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -120780,6 +120780,42 @@ window.BENCHMARK_DATA = {
             "value": 110.81447311485846,
             "unit": "us/iter",
             "extra": "iterations: 6286\ncpu: 110.80817992363988 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bb6bac635094bf1bfe6d1bee211fbee7f8a9c692",
+          "message": "[config][cmake] Adds `AXCF2000EA` (#1482)\n\n* [config][cmake] Adds `AXC F 2000` support\n\n* [cmake] Sets `plcncli` target\n\nWrite the settings file. Derive the short SDK\nversion from the cached device version so a reconfiguration without the\npreset environment still registers a valid target.\n\n* [ci] Adds Ubuntu AXCF2000 2026 LTS build\n\nAdds the Linux configure and build presets for AXCF2000 2026 LTS that the\nmatrix entry references.\n\n* Registers CI runner SDK with plcncli\n\nTarget selection resolves versions from the plcncli settings, so the\ninstalled SDK must be registered before configure runs.\n\n* Warns when plcncli has no short SDK version\n\n* Apply suggestion from @SergeiSilakov\n\nCo-authored-by: SergeiSilakov <139815520+SergeiSilakov@users.noreply.github.com>\n\n* Checks plcncli results during configure\n\nFailed generation and duplicate target adds only printed messages\nand configure continued. Check the exit codes, fail with\nFATAL_ERROR, and rewrite the settings file before adding the target.\n\n---------\n\nCo-authored-by: Dima Dvoraninovich <113066705+Lictwin@users.noreply.github.com>\nCo-authored-by: SergeiSilakov <139815520+SergeiSilakov@users.noreply.github.com>",
+          "timestamp": "2026-11-03T07:04:34Z",
+          "tree_id": "508a411255bf0d839a8a16f49fb7ed1d3f5753af",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/bb6bac635094bf1bfe6d1bee211fbee7f8a9c692"
+        },
+        "date": 1793689625856,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 8.927323425445381,
+            "unit": "us/iter",
+            "extra": "iterations: 77514\ncpu: 8.925836855277756 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 78.68318180883806,
+            "unit": "us/iter",
+            "extra": "iterations: 9730\ncpu: 78.66259640287771 us\nthreads: 1"
           }
         ]
       }
