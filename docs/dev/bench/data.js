@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793866910854,
+  "lastUpdate": 1793867040847,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121104,6 +121104,38 @@ window.BENCHMARK_DATA = {
             "value": 115.70589401455231,
             "unit": "us/iter",
             "extra": "iterations: 6048\ncpu: 115.70448892195769 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "5acdc2d6b14b022ffe3036544162dbefeeb81a07",
+          "message": "Add project-local `LLM` agent skills",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1491/commits/5acdc2d6b14b022ffe3036544162dbefeeb81a07"
+        },
+        "date": 1793867040214,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 15.464412583235529,
+            "unit": "us/iter",
+            "extra": "iterations: 45203\ncpu: 15.464539322611332 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 85.36347063809401,
+            "unit": "us/iter",
+            "extra": "iterations: 8259\ncpu: 85.36322956774427 us\nthreads: 1"
           }
         ]
       }
