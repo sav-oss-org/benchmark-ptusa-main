@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793866065113,
+  "lastUpdate": 1793866138267,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121008,6 +121008,38 @@ window.BENCHMARK_DATA = {
             "value": 112.36754742765298,
             "unit": "us/iter",
             "extra": "iterations: 6220\ncpu: 112.35558247588425 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "5ea9fb7f6395e32e7fc7c7cb4d22a7a4d63f0d12",
+          "message": "Add LLM pull request style skill",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1491/commits/5ea9fb7f6395e32e7fc7c7cb4d22a7a4d63f0d12"
+        },
+        "date": 1793866137811,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 15.33882444776254,
+            "unit": "us/iter",
+            "extra": "iterations: 45542\ncpu: 15.338592595845594 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 84.92572091642846,
+            "unit": "us/iter",
+            "extra": "iterations: 8424\ncpu: 84.92096688034188 us\nthreads: 1"
           }
         ]
       }
