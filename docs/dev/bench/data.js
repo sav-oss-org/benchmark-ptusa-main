@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793867297874,
+  "lastUpdate": 1793885768376,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121168,6 +121168,38 @@ window.BENCHMARK_DATA = {
             "value": 90.71498774572353,
             "unit": "us/iter",
             "extra": "iterations: 7834\ncpu: 90.70986967066634 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "0b496132c38a8c340c9c73d1bdbbfd7315b50539",
+          "message": "Fix IO-Link valve switch timer and feedback bits",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1492/commits/0b496132c38a8c340c9c73d1bdbbfd7315b50539"
+        },
+        "date": 1793885767914,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 12.227506023047148,
+            "unit": "us/iter",
+            "extra": "iterations: 57446\ncpu: 12.225849058246007 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 89.19501982966325,
+            "unit": "us/iter",
+            "extra": "iterations: 7867\ncpu: 89.18259094953605 us\nthreads: 1"
           }
         ]
       }
