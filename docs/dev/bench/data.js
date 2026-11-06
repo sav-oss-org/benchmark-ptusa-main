@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793978661974,
+  "lastUpdate": 1793978788548,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121912,6 +121912,38 @@ window.BENCHMARK_DATA = {
             "value": 74.07949136216051,
             "unit": "us/iter",
             "extra": "iterations: 9551\ncpu: 74.05129044079155 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "55d7c13ebc4bcfcbe131abfab454829b989b8cf9",
+          "message": "Disable IPO in Windows AXCF build presets",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1496/commits/55d7c13ebc4bcfcbe131abfab454829b989b8cf9"
+        },
+        "date": 1793978787808,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.821756818181825,
+            "unit": "us/iter",
+            "extra": "iterations: 41800\ncpu: 16.81972779904306 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 112.1402799169178,
+            "unit": "us/iter",
+            "extra": "iterations: 6259\ncpu: 112.13718916759866 us\nthreads: 1"
           }
         ]
       }
