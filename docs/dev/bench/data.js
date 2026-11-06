@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793973401254,
+  "lastUpdate": 1793973709690,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121652,6 +121652,38 @@ window.BENCHMARK_DATA = {
             "value": 72.06766810980966,
             "unit": "us/iter",
             "extra": "iterations: 10163\ncpu: 72.05880419167569 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "ef7509ac224de2a90c812b10d24e3b8306e1c9f3",
+          "message": "Add signal for running supply pump",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1495/commits/ef7509ac224de2a90c812b10d24e3b8306e1c9f3"
+        },
+        "date": 1793973709293,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.631646305881986,
+            "unit": "us/iter",
+            "extra": "iterations: 42500\ncpu: 16.629879247058827 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 111.01742681955622,
+            "unit": "us/iter",
+            "extra": "iterations: 6279\ncpu: 111.00565934065935 us\nthreads: 1"
           }
         ]
       }
