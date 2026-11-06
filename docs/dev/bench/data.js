@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793942614172,
+  "lastUpdate": 1793942874053,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121396,6 +121396,38 @@ window.BENCHMARK_DATA = {
             "value": 112.25568629045755,
             "unit": "us/iter",
             "extra": "iterations: 6149\ncpu: 112.25274044560089 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "01bd3cbdd32d1e750153e6d8f5d676756ba75986",
+          "message": "Removes `DNS` reverse lookup from `TCP` logging",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1490/commits/01bd3cbdd32d1e750153e6d8f5d676756ba75986"
+        },
+        "date": 1793942873248,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 15.093032690931919,
+            "unit": "us/iter",
+            "extra": "iterations: 46129\ncpu: 15.09229515055605 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.52398521474042,
+            "unit": "us/iter",
+            "extra": "iterations: 8522\ncpu: 82.51697547524054 us\nthreads: 1"
           }
         ]
       }
