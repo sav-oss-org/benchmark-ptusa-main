@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793890392235,
+  "lastUpdate": 1793941814743,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121296,6 +121296,38 @@ window.BENCHMARK_DATA = {
             "value": 111.56239225374419,
             "unit": "us/iter",
             "extra": "iterations: 6274\ncpu: 111.55274577621933 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "98ef8538c81481944d7ad34949a49065a8b3369a",
+          "message": "[config][git] Changes submodules location",
+          "timestamp": "2026-11-03T07:04:40Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1494/commits/98ef8538c81481944d7ad34949a49065a8b3369a"
+        },
+        "date": 1793941814371,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.673951097972136,
+            "unit": "us/iter",
+            "extra": "iterations: 41941\ncpu: 16.67300607996948 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 111.6473043478264,
+            "unit": "us/iter",
+            "extra": "iterations: 6279\ncpu: 111.62812056059883 us\nthreads: 1"
           }
         ]
       }
