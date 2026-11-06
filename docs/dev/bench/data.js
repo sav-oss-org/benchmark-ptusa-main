@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793941814743,
+  "lastUpdate": 1793942564362,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121328,6 +121328,42 @@ window.BENCHMARK_DATA = {
             "value": 111.6473043478264,
             "unit": "us/iter",
             "extra": "iterations: 6279\ncpu: 111.62812056059883 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "149e7fe9881f41c0dee99c1327fa283ff1b7a427",
+          "message": "[config][git] Changes submodules location (#1494)\n\nChanges submodules (toluapp, subhook) location to \"sav-oss-org\".",
+          "timestamp": "2026-11-06T08:19:51+03:00",
+          "tree_id": "4b9625dbe4e78bf403205444a9558cd9c5b94dc7",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/149e7fe9881f41c0dee99c1327fa283ff1b7a427"
+        },
+        "date": 1793942564031,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.16735082271988,
+            "unit": "us/iter",
+            "extra": "iterations: 44122\ncpu: 16.165583269117448 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 111.8072011032311,
+            "unit": "us/iter",
+            "extra": "iterations: 6345\ncpu: 111.80185421591808 us\nthreads: 1"
           }
         ]
       }
