@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793975234034,
+  "lastUpdate": 1793975409897,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121780,6 +121780,42 @@ window.BENCHMARK_DATA = {
             "value": 71.88334551738815,
             "unit": "us/iter",
             "extra": "iterations: 9548\ncpu: 71.88009049015501 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "08989d1e842165f96a1426bcef1236edcaca850a",
+          "message": "Add project-local `LLM` agent skills (#1491)\n\n* Add LLM pull request style skill\n\nAllows shared skill files under .agents/skills while keeping other dotfiles ignored.\n\n* Add C++ brace initialization skill\n\n* Integrate LLM style rules into project docs\n\n* Use Markdown in pull request title guidance\n\n* Исправлено именование глобальных констант",
+          "timestamp": "2026-11-06T17:27:54+03:00",
+          "tree_id": "42682c1ed5fdda30bda8e1f90fb6b86c7616b8ca",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/08989d1e842165f96a1426bcef1236edcaca850a"
+        },
+        "date": 1793975409333,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 8.975656769140345,
+            "unit": "us/iter",
+            "extra": "iterations: 78134\ncpu: 8.97469759643689 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 71.48732867061719,
+            "unit": "us/iter",
+            "extra": "iterations: 9794\ncpu: 71.48320573820706 us\nthreads: 1"
           }
         ]
       }
