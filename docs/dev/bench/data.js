@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794303844399,
+  "lastUpdate": 1794306286981,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122936,6 +122936,38 @@ window.BENCHMARK_DATA = {
             "value": 80.45579628989294,
             "unit": "us/iter",
             "extra": "iterations: 8679\ncpu: 80.44834324230902 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "281b24637a6f0f6228d9ec93a7ab6118357f1b88",
+          "message": "Update `Lua` from `5.1` to `5.5`",
+          "timestamp": "2026-11-10T09:38:46Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1289/commits/281b24637a6f0f6228d9ec93a7ab6118357f1b88"
+        },
+        "date": 1794306286346,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.86653369903753,
+            "unit": "us/iter",
+            "extra": "iterations: 71278\ncpu: 9.863936165436742 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 64.71426595744312,
+            "unit": "us/iter",
+            "extra": "iterations: 10810\ncpu: 64.68418270120259 us\nthreads: 1"
           }
         ]
       }
