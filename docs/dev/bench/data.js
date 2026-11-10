@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794302855844,
+  "lastUpdate": 1794303373033,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122836,6 +122836,38 @@ window.BENCHMARK_DATA = {
             "value": 80.87125472463636,
             "unit": "us/iter",
             "extra": "iterations: 8625\ncpu: 80.85069460869566 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "25227dff0470e1c4deb7d60001c4b597a9dcd90c",
+          "message": "Fixes storage path on `PLCnext`",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1489/commits/25227dff0470e1c4deb7d60001c4b597a9dcd90c"
+        },
+        "date": 1794303372682,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.61280173291365,
+            "unit": "us/iter",
+            "extra": "iterations: 40279\ncpu: 17.61207758385263 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 106.42468223734274,
+            "unit": "us/iter",
+            "extra": "iterations: 6615\ncpu: 106.41818745275891 us\nthreads: 1"
           }
         ]
       }
