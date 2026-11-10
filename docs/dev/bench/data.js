@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794301842620,
+  "lastUpdate": 1794301957593,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122624,6 +122624,42 @@ window.BENCHMARK_DATA = {
             "value": 107.1385639187592,
             "unit": "us/iter",
             "extra": "iterations: 6696\ncpu: 107.03330704898448 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4389c321a0020a5a65fa355475e0eb5d7a0385e4",
+          "message": "Disables `IPO` in `Windows` `AXCF` build presets (#1496)\n\nThe Windows SDK cross toolchain builds GCC without an LTO linker\nplugin, so compiling with -fno-fat-lto-objects fails in fmt. Linux\npresets keep IPO enabled.",
+          "timestamp": "2026-11-10T09:06:28Z",
+          "tree_id": "e3b2c1bf37b06f8fe407c0278049659d0e18d5f4",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/4389c321a0020a5a65fa355475e0eb5d7a0385e4"
+        },
+        "date": 1794301956779,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.968547499209556,
+            "unit": "us/iter",
+            "extra": "iterations: 41127\ncpu: 16.967639093539525 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 80.60978156799447,
+            "unit": "us/iter",
+            "extra": "iterations: 8648\ncpu: 80.60452208603144 us\nthreads: 1"
           }
         ]
       }
