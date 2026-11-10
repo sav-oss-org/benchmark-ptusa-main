@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794300428983,
+  "lastUpdate": 1794300962951,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122396,6 +122396,38 @@ window.BENCHMARK_DATA = {
             "value": 104.48725183962195,
             "unit": "us/iter",
             "extra": "iterations: 6659\ncpu: 104.48478450217752 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "c1104513165c24045336b6c006bbb3e3e243c8a3",
+          "message": "Adds `AI` commit attribution rules",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1499/commits/c1104513165c24045336b6c006bbb3e3e243c8a3"
+        },
+        "date": 1794300962183,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 14.239729644734055,
+            "unit": "us/iter",
+            "extra": "iterations: 49287\ncpu: 14.238211333617386 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.03463211644545,
+            "unit": "us/iter",
+            "extra": "iterations: 8519\ncpu: 82.02616926869351 us\nthreads: 1"
           }
         ]
       }
