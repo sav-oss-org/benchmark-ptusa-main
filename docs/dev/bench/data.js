@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794301064518,
+  "lastUpdate": 1794301265257,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122460,6 +122460,42 @@ window.BENCHMARK_DATA = {
             "value": 110.12166849315132,
             "unit": "us/iter",
             "extra": "iterations: 6205\ncpu: 110.1192823529412 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12ed844eb953eeeb475a1dc421567b37dfbc86a9",
+          "message": "Bump `codeql-actions` group from `4.39.1` to `4.39.3` (#1497)\n\nBumps the codeql-actions group with 2 updates in the / directory: [github/codeql-action/init](https://github.com/github/codeql-action) and [github/codeql-action/analyze](https://github.com/github/codeql-action).\n\n\nUpdates `github/codeql-action/init` from 4.39.1 to 4.39.3\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/9b3254085494b55a0f7c4c2b3d2d52cc712ce370...33d7b85da1a04171e211befe2c739303b9a4c066)\n\nUpdates `github/codeql-action/analyze` from 4.39.1 to 4.39.3\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/9b3254085494b55a0f7c4c2b3d2d52cc712ce370...33d7b85da1a04171e211befe2c739303b9a4c066)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action/analyze\n  dependency-version: 4.39.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: codeql-actions\n- dependency-name: github/codeql-action/init\n  dependency-version: 4.39.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: codeql-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2026-11-10T11:56:52+03:00",
+          "tree_id": "8187420dca5ccbe3ae09f687a8f8144166fec251",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/12ed844eb953eeeb475a1dc421567b37dfbc86a9"
+        },
+        "date": 1794301264795,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.927061911333794,
+            "unit": "us/iter",
+            "extra": "iterations: 41301\ncpu: 16.926176944868164 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 79.69954814140952,
+            "unit": "us/iter",
+            "extra": "iterations: 8797\ncpu: 79.69675821302718 us\nthreads: 1"
           }
         ]
       }
