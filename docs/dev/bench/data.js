@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794301957593,
+  "lastUpdate": 1794302326161,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122660,6 +122660,42 @@ window.BENCHMARK_DATA = {
             "value": 80.60978156799447,
             "unit": "us/iter",
             "extra": "iterations: 8648\ncpu: 80.60452208603144 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0fa99f8328c6ce000e3ce7df2605cca02491b9be",
+          "message": "Adds `AI` commit attribution rules (#1499)\n\n* Add AI commit attribution rules\n\nRecord commit provenance trailers for AI-assisted changes in a root\nAGENTS.md, a project-local agent skill and the contribution guides,\nfollowing the pattern established by the LLM style skills in #1491.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)",
+          "timestamp": "2026-11-10T12:15:39+03:00",
+          "tree_id": "f57e0f9014fa4f7cdb2f01273f92971c3dd1be27",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/0fa99f8328c6ce000e3ce7df2605cca02491b9be"
+        },
+        "date": 1794302325414,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.913879589686152,
+            "unit": "us/iter",
+            "extra": "iterations: 50303\ncpu: 13.910508578017218 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 83.1868046775497,
+            "unit": "us/iter",
+            "extra": "iterations: 8637\ncpu: 83.18042016904016 us\nthreads: 1"
           }
         ]
       }
