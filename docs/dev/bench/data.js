@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794301541681,
+  "lastUpdate": 1794301626770,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122528,6 +122528,38 @@ window.BENCHMARK_DATA = {
             "value": 79.73178054350299,
             "unit": "us/iter",
             "extra": "iterations: 8758\ncpu: 79.72756245718202 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "f089f593198e51468764a1fa25bfc9e6ddab5a0c",
+          "message": "Bump step-security/harden-runner from 2.22.3 to 2.22.4",
+          "timestamp": "2026-11-10T08:56:57Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1498/commits/f089f593198e51468764a1fa25bfc9e6ddab5a0c"
+        },
+        "date": 1794301626419,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.224987611853525,
+            "unit": "us/iter",
+            "extra": "iterations: 43025\ncpu: 16.225065938407905 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 81.55208867397195,
+            "unit": "us/iter",
+            "extra": "iterations: 8582\ncpu: 81.54316522955021 us\nthreads: 1"
           }
         ]
       }
