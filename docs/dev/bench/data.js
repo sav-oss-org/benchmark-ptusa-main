@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794302326161,
+  "lastUpdate": 1794302333062,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122696,6 +122696,42 @@ window.BENCHMARK_DATA = {
             "value": 83.1868046775497,
             "unit": "us/iter",
             "extra": "iterations: 8637\ncpu: 83.18042016904016 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cfd117000ea06bca2e08309dca8a02021650c122",
+          "message": "Adds signal for running supply pump (#1495)\n\nRecipe line 24 / line parameter 37 (RV_TM_OP/PTM_OP) now\nholds the DO number of the \"supply pump on\" signal, 0 disables\nit. Drop the WATER circulation time assignment from 542e7d11f\nthat used the same parameter.\n\nFixes https://github.com/sav-oss-org/ptusa_main/issues/1459",
+          "timestamp": "2026-11-10T09:15:07Z",
+          "tree_id": "f600884e88726e758e9c43889557c7c72c17908d",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/cfd117000ea06bca2e08309dca8a02021650c122"
+        },
+        "date": 1794302332358,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.750573514078216,
+            "unit": "us/iter",
+            "extra": "iterations: 39319\ncpu: 17.7216173351306 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 109.95754686021411,
+            "unit": "us/iter",
+            "extra": "iterations: 6338\ncpu: 109.9454083307037 us\nthreads: 1"
           }
         ]
       }
