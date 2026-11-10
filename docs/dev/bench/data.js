@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794303373033,
+  "lastUpdate": 1794303681567,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122868,6 +122868,42 @@ window.BENCHMARK_DATA = {
             "value": 106.42468223734274,
             "unit": "us/iter",
             "extra": "iterations: 6615\ncpu: 106.41818745275891 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "86ed22f82f4aca15839feb25bd4169a9e39cc4de",
+          "message": "Fixes `IO-Link` valve switch timer and feedback bits (#1492)\n\n* Fix IO-Link valve switch timer and feedback bits\n\nRepeated on() calls from step operations no longer restart the\nswitch timer of valve_iolink_mix_proof, valve_iolink_shut_off_thinktop\nand valve_iolink_shut_off_sorio: the timer now starts only on command\ntransition, so a P_ON_TIME timeout is reported as a feedback error\ninstead of an endless ST=0 in intermediate seat position. Seat\nswitching commands restart the timer on transition as well.\n\nAlso align valve_iolink_mix_proof get_on_fb_value/get_off_fb_value\nwith get_fb_state and thinktop: open position is confirmed by main,\nclosed position by de_en.\n\nAdd regression tests for cyclic on()/open_upper_seat() calls and for\nthe feedback bit mapping.\n\n* Deduplicate IO-Link valve cyclic command tests\n\nMove the shared setup, timing manipulation and feedback assertion of\nthe cyclic command regression tests into a template helper; tests now\nprovide the device and the repeated command as a lambda.",
+          "timestamp": "2026-11-10T12:38:41+03:00",
+          "tree_id": "ac88f474bedceb12244c2743ccb8946b7fa1b610",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/86ed22f82f4aca15839feb25bd4169a9e39cc4de"
+        },
+        "date": 1794303680787,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.240272220404567,
+            "unit": "us/iter",
+            "extra": "iterations: 73356\ncpu: 9.239596979115547 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 68.91301812607166,
+            "unit": "us/iter",
+            "extra": "iterations: 11089\ncpu: 68.90875849941385 us\nthreads: 1"
           }
         ]
       }
