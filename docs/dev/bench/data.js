@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793979467677,
+  "lastUpdate": 1794290255658,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -121976,6 +121976,42 @@ window.BENCHMARK_DATA = {
             "value": 68.45147699149103,
             "unit": "us/iter",
             "extra": "iterations: 10344\ncpu: 68.42401962490334 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "760e9e990424dec80565841b33ab79dd4af1b207",
+          "message": "Ignores `lcov` inconsistent errors in coverage job (#1500)\n\nUbuntu 26.04 runners provide lcov 2.4 with GCC 15, whose gcov output\ntriggers inconsistent data errors during capture. These abort lcov\nunless ignored and are unrelated to the reviewed code change.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-10T08:53:12+03:00",
+          "tree_id": "f8bf4d41b19ba4c664af26b7c2fd5401f88a618d",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/760e9e990424dec80565841b33ab79dd4af1b207"
+        },
+        "date": 1794290254889,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.708942218712613,
+            "unit": "us/iter",
+            "extra": "iterations: 72186\ncpu: 9.708421106585766 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 64.9834621649771,
+            "unit": "us/iter",
+            "extra": "iterations: 10559\ncpu: 64.98009044417084 us\nthreads: 1"
           }
         ]
       }
