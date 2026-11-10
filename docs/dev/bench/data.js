@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794302580129,
+  "lastUpdate": 1794302744254,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122768,6 +122768,42 @@ window.BENCHMARK_DATA = {
             "value": 81.48010509666094,
             "unit": "us/iter",
             "extra": "iterations: 8535\ncpu: 81.44776848271822 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6da9d247415ce25f815a313ab1a78279afafb87",
+          "message": "Removes `DNS` reverse lookup from `TCP` logging (#1490)\n\n* Remove DNS reverse lookup from TCP connection logging to prevent blocking calls\n\nRemove gethostbyaddr() calls that perform synchronous DNS queries when logging accepted connections. Replace hostname resolution with numeric IP addresses from inet_ntoa(). Delete netdb.h include and MODBUS conditional compilation guards. Log format changes from \"s%d->\"%s\":\"%s\"\" to \"s%d->\"%s\"\" on Linux and removes hostname field on Windows debug output.\n\n* Use G_LOG helpers for TCP connection logging\n\n---------\n\nCo-authored-by: Artem Rudnitsky <artem.rudnitsky@gmail.com>\nCo-authored-by: AlexandrBehunkov <asutp10@pda.savushkin.by>",
+          "timestamp": "2026-11-10T12:16:49+03:00",
+          "tree_id": "f196b82067eb6af45e3a15afd2929950d32a9d28",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/e6da9d247415ce25f815a313ab1a78279afafb87"
+        },
+        "date": 1794302743614,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.813958209561296,
+            "unit": "us/iter",
+            "extra": "iterations: 39387\ncpu: 17.81317942468327 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 103.28633564985974,
+            "unit": "us/iter",
+            "extra": "iterations: 6763\ncpu: 103.26562620138992 us\nthreads: 1"
           }
         ]
       }
