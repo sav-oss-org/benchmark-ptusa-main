@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794301265257,
+  "lastUpdate": 1794301541681,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -122496,6 +122496,38 @@ window.BENCHMARK_DATA = {
             "value": 79.69954814140952,
             "unit": "us/iter",
             "extra": "iterations: 8797\ncpu: 79.69675821302718 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "0bca58a6d7f14e44f805eafd6bd19d9af4a8c5d7",
+          "message": "Disables `IPO` in `Windows` `AXCF` build presets",
+          "timestamp": "2026-10-14T07:31:07Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1496/commits/0bca58a6d7f14e44f805eafd6bd19d9af4a8c5d7"
+        },
+        "date": 1794301541152,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.956666271065131,
+            "unit": "us/iter",
+            "extra": "iterations: 50556\ncpu: 13.955806551151202 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 79.73178054350299,
+            "unit": "us/iter",
+            "extra": "iterations: 8758\ncpu: 79.72756245718202 us\nthreads: 1"
           }
         ]
       }
