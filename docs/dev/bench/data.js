@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794479523597,
+  "lastUpdate": 1794480154832,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -123544,6 +123544,38 @@ window.BENCHMARK_DATA = {
             "value": 106.93446906987364,
             "unit": "us/iter",
             "extra": "iterations: 6741\ncpu: 106.90355511051774 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "54c8a3cfa267efa6a2edcc86cc5c9ce8860d4435",
+          "message": "Adds `commit-check` CI policy and CalVer tag rules",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1506/commits/54c8a3cfa267efa6a2edcc86cc5c9ce8860d4435"
+        },
+        "date": 1794480154478,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.761340675845197,
+            "unit": "us/iter",
+            "extra": "iterations: 39950\ncpu: 17.761330237797246 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 106.26841179138233,
+            "unit": "us/iter",
+            "extra": "iterations: 6615\ncpu: 106.20546878306878 us\nthreads: 1"
           }
         ]
       }
