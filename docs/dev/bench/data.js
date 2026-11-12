@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794477916436,
+  "lastUpdate": 1794479523597,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -123512,6 +123512,38 @@ window.BENCHMARK_DATA = {
             "value": 84.6031403635497,
             "unit": "us/iter",
             "extra": "iterations: 8307\ncpu: 84.56415348501265 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "3afb85b2080e54d7ca7ee0a8c31dae32edb2231c",
+          "message": "Adds `.gitattributes` to normalize line endings",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1508/commits/3afb85b2080e54d7ca7ee0a8c31dae32edb2231c"
+        },
+        "date": 1794479523184,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.44428782538642,
+            "unit": "us/iter",
+            "extra": "iterations: 39722\ncpu: 17.44275414128191 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 106.93446906987364,
+            "unit": "us/iter",
+            "extra": "iterations: 6741\ncpu: 106.90355511051774 us\nthreads: 1"
           }
         ]
       }
