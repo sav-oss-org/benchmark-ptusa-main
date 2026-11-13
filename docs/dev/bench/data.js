@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794581881193,
+  "lastUpdate": 1794582121545,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125156,6 +125156,38 @@ window.BENCHMARK_DATA = {
             "value": 109.12882518797181,
             "unit": "us/iter",
             "extra": "iterations: 6384\ncpu: 109.10183536967418 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "10f2e887cc21adb95faa62dc993cfe69398f7a4a",
+          "message": "Add `IP:port` parser and null guards to `device`",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1530/commits/10f2e887cc21adb95faa62dc993cfe69398f7a4a"
+        },
+        "date": 1794582120919,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.465496671087424,
+            "unit": "us/iter",
+            "extra": "iterations: 75400\ncpu: 9.464707692307693 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 66.84354318013364,
+            "unit": "us/iter",
+            "extra": "iterations: 10792\ncpu: 66.82865965530023 us\nthreads: 1"
           }
         ]
       }
