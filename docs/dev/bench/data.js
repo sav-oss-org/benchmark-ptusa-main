@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794494575101,
+  "lastUpdate": 1794547364678,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -124120,6 +124120,38 @@ window.BENCHMARK_DATA = {
             "value": 80.37079399709408,
             "unit": "us/iter",
             "extra": "iterations: 7563\ncpu: 80.36513195821766 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "4c3027dd3e467b710215a31dcb8543cc366c48b3",
+          "message": "Add response links rule to agent instructions",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1513/commits/4c3027dd3e467b710215a31dcb8543cc366c48b3"
+        },
+        "date": 1794547364151,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.614888325513085,
+            "unit": "us/iter",
+            "extra": "iterations: 39642\ncpu: 17.613966903788913 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 103.77307277065121,
+            "unit": "us/iter",
+            "extra": "iterations: 6706\ncpu: 103.76991231732778 us\nthreads: 1"
           }
         ]
       }
