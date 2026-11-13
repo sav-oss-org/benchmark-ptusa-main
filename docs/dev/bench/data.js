@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794598734480,
+  "lastUpdate": 1794600830588,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125552,6 +125552,38 @@ window.BENCHMARK_DATA = {
             "value": 85.61582710622864,
             "unit": "us/iter",
             "extra": "iterations: 8190\ncpu: 85.58108376068374 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "7d857b5786d7c2c35c24caccb4b87d1316b2c084",
+          "message": "Enables `CFamily` analysis cache in `Sonar` CI job",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1533/commits/7d857b5786d7c2c35c24caccb4b87d1316b2c084"
+        },
+        "date": 1794600829962,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.60496560385946,
+            "unit": "us/iter",
+            "extra": "iterations: 40208\ncpu: 17.60308635097493 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 105.80075657995239,
+            "unit": "us/iter",
+            "extra": "iterations: 6573\ncpu: 105.79585288300625 us\nthreads: 1"
           }
         ]
       }
