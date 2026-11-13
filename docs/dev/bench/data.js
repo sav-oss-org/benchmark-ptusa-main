@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794578727296,
+  "lastUpdate": 1794578730945,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -124892,6 +124892,42 @@ window.BENCHMARK_DATA = {
             "value": 109.99290471742057,
             "unit": "us/iter",
             "extra": "iterations: 6423\ncpu: 109.95642238829205 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "581b3fa2208e9866ddafac1810b2dbd62b5c41da",
+          "message": "Make `was_successful_init` test order-independent (#1503)\n\nThe test asserted that the shared `params_manager` singleton had never\nbeen initialized, so it stayed green only while no earlier test in the\nsame `main_test` process called `params_manager::init()`. Running\n`main_test --gtest_shuffle` made it fail in about half of the orders\n(19 seeds out of 40), and on a machine without `./eeprom.bin` in the\nworking directory it passed without checking anything.\n\nCheck the flag on a local `params_manager` object instead of the\nsingleton, and assert that it mirrors the result of the memory load.\nThe constructor only allocates buffers and `SRAM::load_data()` opens\nthe files read-only, so the test no longer touches the shared state.\n\nSee #1501\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-13T13:54:13Z",
+          "tree_id": "d1623bc3bd12aa6f878958ba0548391016e3502d",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/581b3fa2208e9866ddafac1810b2dbd62b5c41da"
+        },
+        "date": 1794578730355,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.57437023764125,
+            "unit": "us/iter",
+            "extra": "iterations: 39345\ncpu: 17.571281153895033 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 104.29243860430597,
+            "unit": "us/iter",
+            "extra": "iterations: 6735\ncpu: 104.27964424647367 us\nthreads: 1"
           }
         ]
       }
