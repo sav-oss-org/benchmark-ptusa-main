@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794597737985,
+  "lastUpdate": 1794598281613,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125450,6 +125450,40 @@ window.BENCHMARK_DATA = {
             "value": 81.80669962379726,
             "unit": "us/iter",
             "extra": "iterations: 8506\ncpu: 81.8007796849283 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm",
+            "email": "dzimitriy@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "3b242c198b5bd589e236e750661a0638aaa2b476",
+          "message": "Add .gitattributes to normalize line endings (#1508)\n\nKeep LF in the repository for all text files regardless of the\nper-developer core.autocrlf setting, pin content-based detection\nexplicitly, force LF for shell scripts, and mark tracked binaries\nso line ending filters can never touch them.\n\nThe stored content is already LF-only, so git add --renormalize\nstaged no content changes; this pins the policy before the planned\nclang-format rollout.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-13T19:20:38Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/3b242c198b5bd589e236e750661a0638aaa2b476"
+        },
+        "date": 1794598280951,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.864200623005292,
+            "unit": "us/iter",
+            "extra": "iterations: 38844\ncpu: 17.86359643703017 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 105.9870548235647,
+            "unit": "us/iter",
+            "extra": "iterations: 6603\ncpu: 105.98365530819324 us\nthreads: 1"
           }
         ]
       }
