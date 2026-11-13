@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794598499440,
+  "lastUpdate": 1794598734480,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125518,6 +125518,40 @@ window.BENCHMARK_DATA = {
             "value": 79.59301585863446,
             "unit": "us/iter",
             "extra": "iterations: 8828\ncpu: 79.57118860444041 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm",
+            "email": "dzimitriy@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "88fa02e33c1121bd388f42e5b7f1bd9cec4508d2",
+          "message": "Fix storage path on `PLCnext` (#1489)\n\n* Uses explicit path on `PLCnext`\n\nUses \"/opt/main/nvram.bin\" and \"/opt/main/eeprom.bin\"\n\n* Log SRAM file creation error once\n\nThe message was printed on every save cycle. Paths are resolved in the\nconstructor, so messages show the absolute path and it is clear which\ndirectory denies creating the temp file. The new test is added to the\nserial group of tests that capture stdout.\n\n* [fix] Removes the \"fopen\" hook before reading captured \"stdout\"\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\n\n* Use /opt/plcnext/custom for parameters on PLCnext\n\nPLCnext firmware 2025.0 and later grants applications write access\nonly to /opt/plcnext/custom (PLCnext Engineer help, topic FILE_OPEN).\nCreating nvram.bin.tmp in /opt/main fails with EACCES on AXC F 2152.\n\nAdd SRAM::get_directory() so params_manager::evaluate() checks free\nspace on the volume that stores the files, not on the current path.\n\n* Cover evaluate() save path and SRAM::get_directory\n\nSonarQube quality gate failed with 71.4% coverage on new code.\nAdd a test that zeroes the save interval parameters so evaluate()\nreaches the free space check and saves, and a direct test for\nSRAM::get_directory().\n\n* Creates storage directory and checks write access\n\nThe storage directory may be missing on a controller, and\nfiles created by root deny writes to the logic running as\nadmin. SRAM::ensure_storage_dir() creates the directory when\nit is missing and checks write access of the current user\nbefore creating the files, logging the failing uid and gid.\nThe constructor calls it because params_manager::evaluate()\nchecks free space on the storage directory before the first\nsave.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Adds tests for storage directory error handling\n\nSonarQube quality gate failed because the failure branches\nof SRAM::ensure_storage_dir() were never executed. A regular\nfile on the storage path makes the constructor log a create\nerror, and a subhook for access() reproduces the write denial\non POSIX, so both messages are now verified. The tests\ncapture stdout, so they are registered in the serial capture\nfilter.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n---------\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-13T19:24:21Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/88fa02e33c1121bd388f42e5b7f1bd9cec4508d2"
+        },
+        "date": 1794598734121,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.618206547411416,
+            "unit": "us/iter",
+            "extra": "iterations: 51654\ncpu: 13.616400375575948 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 85.61582710622864,
+            "unit": "us/iter",
+            "extra": "iterations: 8190\ncpu: 85.58108376068374 us\nthreads: 1"
           }
         ]
       }
