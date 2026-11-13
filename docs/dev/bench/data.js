@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794578991254,
+  "lastUpdate": 1794579220630,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -124992,6 +124992,42 @@ window.BENCHMARK_DATA = {
             "value": 80.08661266874606,
             "unit": "us/iter",
             "extra": "iterations: 8667\ncpu: 80.07856282450675 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bb61369ba197c45b62beda4a7d49688351f38f38",
+          "message": "Clear `CMD_ANSWER` in CLEAR_RESULT_CMD command (#1504)\n\nCommand CLEAR_RESULT_CMD zeroed only the result code but left the\ncommand answer text, so a leftover answer (for example the OPC UA\nstartup failure written by PAC_info.OPCUA_server_start_fail) leaked\ninto PAC_info.save_device under --gtest_shuffle. The command now also\nclears the answer, and OPCUA_server_start_fail no longer leaves that\nresidue in the shared object. Regression test PAC_info.clear_result_cmd\npins the new contract.\n\nFixes #1502\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-13T14:08:57Z",
+          "tree_id": "ccf5a2eef6771fe2854797d573dcfdeebe474cce",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/bb61369ba197c45b62beda4a7d49688351f38f38"
+        },
+        "date": 1794579219758,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.77817547577,
+            "unit": "us/iter",
+            "extra": "iterations: 50497\ncpu: 13.777785393191678 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.57258217431604,
+            "unit": "us/iter",
+            "extra": "iterations: 8628\ncpu: 82.53809191006026 us\nthreads: 1"
           }
         ]
       }
