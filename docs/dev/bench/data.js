@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794578831856,
+  "lastUpdate": 1794578991254,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -124960,6 +124960,38 @@ window.BENCHMARK_DATA = {
             "value": 60.152764563943904,
             "unit": "us/iter",
             "extra": "iterations: 11604\ncpu: 60.14996561530507 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "2c59d2251b4e67b0bd0e67283a68e99db2083dce",
+          "message": "Adds shuffled-order run of `main_test` to CTest",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1505/commits/2c59d2251b4e67b0bd0e67283a68e99db2083dce"
+        },
+        "date": 1794578990926,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.921481066033595,
+            "unit": "us/iter",
+            "extra": "iterations: 48854\ncpu: 13.919396692184877 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 80.08661266874606,
+            "unit": "us/iter",
+            "extra": "iterations: 8667\ncpu: 80.07856282450675 us\nthreads: 1"
           }
         ]
       }
