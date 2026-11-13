@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794574094221,
+  "lastUpdate": 1794576068261,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -124696,6 +124696,42 @@ window.BENCHMARK_DATA = {
             "value": 66.79226498363597,
             "unit": "us/iter",
             "extra": "iterations: 10695\ncpu: 66.78180579710144 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e4bdd84d16ea327a8317414fee2557c76a7b4c0c",
+          "message": "Remove dead __cplusplus guards around lua includes (#1514)\n\nAll three headers are C++-only, so the C branch of the guard is\nnever taken. Splitting `extern \"C\"` braces across separate `#ifdef`\nblocks is also a known clang-format Whitesmiths bug: the braces are\nnever paired, so everything up to end-of-file is indented one level\ndeeper. This blocked the three files from being formatted in the\ntree-wide run (#1511).\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-13T16:16:18+03:00",
+          "tree_id": "6f9c76a8d8f05727b75b43beba67eb2861903b5d",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/e4bdd84d16ea327a8317414fee2557c76a7b4c0c"
+        },
+        "date": 1794576067697,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.289885708988912,
+            "unit": "us/iter",
+            "extra": "iterations: 43153\ncpu: 16.289061919217666 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 81.5435398250722,
+            "unit": "us/iter",
+            "extra": "iterations: 8575\ncpu: 81.54189352769677 us\nthreads: 1"
           }
         ]
       }
