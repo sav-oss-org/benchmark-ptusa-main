@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794581350265,
+  "lastUpdate": 1794581385250,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125060,6 +125060,38 @@ window.BENCHMARK_DATA = {
             "value": 84.05093331731535,
             "unit": "us/iter",
             "extra": "iterations: 8323\ncpu: 84.03244647362729 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "292eefd58cfe73c17753e7a6c60b534f657bb28f",
+          "message": "Add CMake script to generate PLCnext SDK presets",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1528/commits/292eefd58cfe73c17753e7a6c60b534f657bb28f"
+        },
+        "date": 1794581384901,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.66727732271206,
+            "unit": "us/iter",
+            "extra": "iterations: 39921\ncpu: 17.661740061621703 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 103.65580396801849,
+            "unit": "us/iter",
+            "extra": "iterations: 6754\ncpu: 103.59674859342614 us\nthreads: 1"
           }
         ]
       }
