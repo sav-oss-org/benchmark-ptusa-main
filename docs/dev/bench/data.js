@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794598281613,
+  "lastUpdate": 1794598499440,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125484,6 +125484,40 @@ window.BENCHMARK_DATA = {
             "value": 105.9870548235647,
             "unit": "us/iter",
             "extra": "iterations: 6603\ncpu: 105.98365530819324 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm",
+            "email": "dzimitriy@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "ce7c412bd0d6f128adbb8ce5f8c08720c23e9e2c",
+          "message": "Add response links rule to agent instructions (#1513)\n\nAgent replies that mention pull requests, issues, review\nthreads, comments, commits, or CI runs should carry clickable\nMarkdown links instead of bare references. Add the rule to both\nthe project AGENTS.md and the Copilot instructions so every\ncoding agent working in this repository follows it.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-13T19:21:05Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/ce7c412bd0d6f128adbb8ce5f8c08720c23e9e2c"
+        },
+        "date": 1794598498906,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 15.738269309885602,
+            "unit": "us/iter",
+            "extra": "iterations: 44239\ncpu: 15.737782454395443 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 79.59301585863446,
+            "unit": "us/iter",
+            "extra": "iterations: 8828\ncpu: 79.57118860444041 us\nthreads: 1"
           }
         ]
       }
