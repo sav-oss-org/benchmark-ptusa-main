@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794550098850,
+  "lastUpdate": 1794550106647,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -124248,6 +124248,38 @@ window.BENCHMARK_DATA = {
             "value": 109.81109052532508,
             "unit": "us/iter",
             "extra": "iterations: 6396\ncpu: 109.80544559099441 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "a1be90d49e5b71e4d89c01f3272b5cfcc0f6ef16",
+          "message": "Remove dead `__cplusplus` guards around lua includes",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1514/commits/a1be90d49e5b71e4d89c01f3272b5cfcc0f6ef16"
+        },
+        "date": 1794550106207,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.599972803294673,
+            "unit": "us/iter",
+            "extra": "iterations: 39821\ncpu: 17.598011275457672 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 103.04066597907972,
+            "unit": "us/iter",
+            "extra": "iterations: 6787\ncpu: 103.02566730514219 us\nthreads: 1"
           }
         ]
       }
