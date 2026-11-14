@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794640607105,
+  "lastUpdate": 1794641316639,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125752,6 +125752,38 @@ window.BENCHMARK_DATA = {
             "value": 84.25510174976458,
             "unit": "us/iter",
             "extra": "iterations: 8344\ncpu: 84.24482394534995 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "3862c7c6add008bfd7ffb8b93a27d5bbd2e071c6",
+          "message": "Fix out-of-bounds read in `io_device::get_DO`",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1538/commits/3862c7c6add008bfd7ffb8b93a27d5bbd2e071c6"
+        },
+        "date": 1794641316013,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.559511771300368,
+            "unit": "us/iter",
+            "extra": "iterations: 51736\ncpu: 13.559324474253904 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 67.82200407490454,
+            "unit": "us/iter",
+            "extra": "iterations: 10307\ncpu: 67.82073901232172 us\nthreads: 1"
           }
         ]
       }
