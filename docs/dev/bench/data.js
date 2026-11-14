@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794690249275,
+  "lastUpdate": 1794691436379,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125988,6 +125988,38 @@ window.BENCHMARK_DATA = {
             "value": 60.034824313856895,
             "unit": "us/iter",
             "extra": "iterations: 11623\ncpu: 60.004718747311344 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "SergeiSilakov",
+            "username": "SergeiSilakov"
+          },
+          "committer": {
+            "name": "SergeiSilakov",
+            "username": "SergeiSilakov"
+          },
+          "id": "1595b4b25b9b50947e018e4bbf7ef21f7eb181fe",
+          "message": "Add `Lua` error counting and fix stack cleanup",
+          "timestamp": "2026-11-10T15:49:27Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1456/commits/1595b4b25b9b50947e018e4bbf7ef21f7eb181fe"
+        },
+        "date": 1794691435615,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.73823279827627,
+            "unit": "us/iter",
+            "extra": "iterations: 41740\ncpu: 16.737003138476283 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 81.98391109571783,
+            "unit": "us/iter",
+            "extra": "iterations: 8661\ncpu: 81.97531728437825 us\nthreads: 1"
           }
         ]
       }
