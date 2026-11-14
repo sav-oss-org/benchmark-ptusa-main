@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794643721252,
+  "lastUpdate": 1794651110645,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125852,6 +125852,42 @@ window.BENCHMARK_DATA = {
             "value": 60.21636733281182,
             "unit": "us/iter",
             "extra": "iterations: 11559\ncpu: 60.176059347694434 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "6f914cc6dd224e33c0f8dcc07d9479db171f07f7",
+          "message": "Add .gitattributes to normalize line endings (#1508)\n\nKeep LF in the repository for all text files regardless of the\nper-developer core.autocrlf setting, pin content-based detection\nexplicitly, force LF for shell scripts, and mark tracked binaries\nso line ending filters can never touch them.\n\nThe stored content is already LF-only, so git add --renormalize\nstaged no content changes; this pins the policy before the planned\nclang-format rollout.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-14T09:57:08Z",
+          "tree_id": "b9d4ff07ae96a66c77248c635d064068520b0a48",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/6f914cc6dd224e33c0f8dcc07d9479db171f07f7"
+        },
+        "date": 1794651109952,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.91378004343649,
+            "unit": "us/iter",
+            "extra": "iterations: 41440\ncpu: 16.908883735521236 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 108.3783483390288,
+            "unit": "us/iter",
+            "extra": "iterations: 6442\ncpu: 108.37141151816206 us\nthreads: 1"
           }
         ]
       }
