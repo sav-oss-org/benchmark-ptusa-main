@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794602687969,
+  "lastUpdate": 1794640481975,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125680,6 +125680,42 @@ window.BENCHMARK_DATA = {
             "value": 83.9797532246196,
             "unit": "us/iter",
             "extra": "iterations: 8218\ncpu: 83.97815271355562 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "95db7f00ece80221a215a258ad7b5af629e272c7",
+          "message": "Skip benchmark upload on merge queue runs (#1534)\n\ngithub-action-benchmark cannot resolve the temporary gh-readonly-queue ref of merge queue groups and fails with 'No commit found for SHA', turning multi-PR merge groups red and evicting entries from the queue.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-14T10:11:32+03:00",
+          "tree_id": "1e0d53bda15d306d140308d70db0cf4c9652ea26",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/95db7f00ece80221a215a258ad7b5af629e272c7"
+        },
+        "date": 1794640481489,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.849388076446612,
+            "unit": "us/iter",
+            "extra": "iterations: 50807\ncpu: 13.84335871041392 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 78.9496900419167,
+            "unit": "us/iter",
+            "extra": "iterations: 8827\ncpu: 78.93915985045884 us\nthreads: 1"
           }
         ]
       }
