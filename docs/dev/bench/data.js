@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794640481975,
+  "lastUpdate": 1794640607105,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125716,6 +125716,42 @@ window.BENCHMARK_DATA = {
             "value": 78.9496900419167,
             "unit": "us/iter",
             "extra": "iterations: 8827\ncpu: 78.93915985045884 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4bf8af52c5bd7efd2ea6e1e7227fb9b1c34a551e",
+          "message": "Enable `CFamily` analysis cache in `Sonar` `CI` job (#1533)\n\nThe `Run sonar-scanner` step takes up to 7 minutes because the\nCFamily plugin re-parses every translation unit from\n`compile_commands.json` on each run.\n\nPersist the plugin analysis cache under `${{ runner.temp }}`,\noutside the workspace so sonar never indexes it, and pass\n`sonar.cfamily.cache.enabled` with the cache path to\n`sonar-scanner`. `actions/cache` cannot overwrite an existing\nkey, so every run saves a unique key and `restore-keys` picks\nup the latest cache, letting master analyses warm it for PR and\nmerge group runs. The plugin validates entries against the\ncompiler and flags, so sharing the cache is safe.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-14T10:13:15+03:00",
+          "tree_id": "88a5f37262d0dc09f3fd7338add0a74613220f66",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/4bf8af52c5bd7efd2ea6e1e7227fb9b1c34a551e"
+        },
+        "date": 1794640606349,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.8938147284733,
+            "unit": "us/iter",
+            "extra": "iterations: 40751\ncpu: 16.89334990552379 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 84.25510174976458,
+            "unit": "us/iter",
+            "extra": "iterations: 8344\ncpu: 84.24482394534995 us\nthreads: 1"
           }
         ]
       }
