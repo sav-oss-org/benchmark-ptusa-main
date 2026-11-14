@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794651110645,
+  "lastUpdate": 1794651254719,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -125888,6 +125888,42 @@ window.BENCHMARK_DATA = {
             "value": 108.3783483390288,
             "unit": "us/iter",
             "extra": "iterations: 6442\ncpu: 108.37141151816206 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "0a7221cd914794e9c4fc48a1c1a4bb25a3acafc3",
+          "message": "Add response links rule to agent instructions (#1513)\n\nAgent replies that mention pull requests, issues, review\nthreads, comments, commits, or CI runs should carry clickable\nMarkdown links instead of bare references. Add the rule to both\nthe project AGENTS.md and the Copilot instructions so every\ncoding agent working in this repository follows it.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-14T09:57:35Z",
+          "tree_id": "ba6407aa2abfcf0e8715711883df4aeaa4aecfb2",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/0a7221cd914794e9c4fc48a1c1a4bb25a3acafc3"
+        },
+        "date": 1794651254186,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.77143829044158,
+            "unit": "us/iter",
+            "extra": "iterations: 58986\ncpu: 11.77105155460618 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.78494774429491,
+            "unit": "us/iter",
+            "extra": "iterations: 11482\ncpu: 60.75170040062706 us\nthreads: 1"
           }
         ]
       }
