@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794770067500,
+  "lastUpdate": 1794771375160,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -126084,6 +126084,38 @@ window.BENCHMARK_DATA = {
             "value": 59.4572472588222,
             "unit": "us/iter",
             "extra": "iterations: 11765\ncpu: 59.45552970675733 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "AndreyNemenkov",
+            "username": "AndreyNemenkov"
+          },
+          "committer": {
+            "name": "AndreyNemenkov",
+            "username": "AndreyNemenkov"
+          },
+          "id": "a933d3347dbfedc5b467cc8e90e865fd1d066488",
+          "message": "Adds hot reload of technological objects",
+          "timestamp": "2026-10-14T07:31:11Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1449/commits/a933d3347dbfedc5b467cc8e90e865fd1d066488"
+        },
+        "date": 1794771374453,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 18.01342134314651,
+            "unit": "us/iter",
+            "extra": "iterations: 39132\ncpu: 18.011493228048657 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 106.88070607701394,
+            "unit": "us/iter",
+            "extra": "iterations: 6648\ncpu: 106.8620348977136 us\nthreads: 1"
           }
         ]
       }
