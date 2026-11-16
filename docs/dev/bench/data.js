@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794815296495,
+  "lastUpdate": 1794815784430,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -126384,6 +126384,38 @@ window.BENCHMARK_DATA = {
             "value": 60.31546086881499,
             "unit": "us/iter",
             "extra": "iterations: 11602\ncpu: 60.314229615583514 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "326045d1ab7b2f67d9ef1d08414acf863ea83fe4",
+          "message": "Add `SO_REUSEADDR` to `Modbus` listener socket",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1547/commits/326045d1ab7b2f67d9ef1d08414acf863ea83fe4"
+        },
+        "date": 1794815784084,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.021414673781564,
+            "unit": "us/iter",
+            "extra": "iterations: 41230\ncpu: 17.015294567062817 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 105.57421712400563,
+            "unit": "us/iter",
+            "extra": "iterations: 6669\ncpu: 105.56875693507271 us\nthreads: 1"
           }
         ]
       }
