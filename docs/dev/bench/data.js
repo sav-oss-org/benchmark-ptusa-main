@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794771375160,
+  "lastUpdate": 1794797249380,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -126116,6 +126116,38 @@ window.BENCHMARK_DATA = {
             "value": 106.88070607701394,
             "unit": "us/iter",
             "extra": "iterations: 6648\ncpu: 106.8620348977136 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "56a2dc4f86674cf98e7e51668dfc8a6158f19fc4",
+          "message": "Bump hendrikmuhs/ccache-action from 1.2.24 to 1.2.25",
+          "timestamp": "2026-11-14T08:11:49Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1541/commits/56a2dc4f86674cf98e7e51668dfc8a6158f19fc4"
+        },
+        "date": 1794797248767,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.739856369559963,
+            "unit": "us/iter",
+            "extra": "iterations: 59855\ncpu: 11.739089800350849 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.88348299912825,
+            "unit": "us/iter",
+            "extra": "iterations: 11470\ncpu: 60.88181089799476 us\nthreads: 1"
           }
         ]
       }
