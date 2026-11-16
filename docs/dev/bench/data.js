@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794824633698,
+  "lastUpdate": 1794824909954,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -126836,6 +126836,38 @@ window.BENCHMARK_DATA = {
             "value": 105.20595481071237,
             "unit": "us/iter",
             "extra": "iterations: 6683\ncpu: 105.20436001795602 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "7e80978304101fa2f7dfa95fb45e1263af31c0a6",
+          "message": "Add `IFM` `DP2200` `AI` to `IO-Link` converter device",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1516/commits/7e80978304101fa2f7dfa95fb45e1263af31c0a6"
+        },
+        "date": 1794824909621,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.982097831940848,
+            "unit": "us/iter",
+            "extra": "iterations: 50137\ncpu: 13.98147667391348 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 81.2308292654578,
+            "unit": "us/iter",
+            "extra": "iterations: 8604\ncpu: 81.227499883775 us\nthreads: 1"
           }
         ]
       }
