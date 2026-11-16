@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794838002887,
+  "lastUpdate": 1794856615205,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -127412,6 +127412,40 @@ window.BENCHMARK_DATA = {
             "value": 80.57559015073595,
             "unit": "us/iter",
             "extra": "iterations: 8691\ncpu: 80.55730894028304 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm",
+            "email": "dzimitriy@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "a31b7749e3b51c094b085ba1cf14c34e9e6d3482",
+          "message": "Speed up Sonar analysis in merge queue (#1549)\n\nThe CFamily cache step added in #1533 never worked: the\nsonar.cfamily.cache.* properties do not exist on SonarCloud\nand were silently ignored, so the cache was never saved. The\nserver-side incremental cache (sonar.cfamily.analysisCache)\nis already enabled by default. Remove the dead cache block.\n\nDeep symbolic execution takes about 85% of the CFamily\nanalysis time. Apply the scanner-recommended shallow-mode cap\n(automaticShallowModeThreshold=70) only to merge_group runs,\nwhich block the merge queue. The post-merge push analysis on\nmaster keeps full depth, so deep findings still surface there.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-16T09:43:56Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/a31b7749e3b51c094b085ba1cf14c34e9e6d3482"
+        },
+        "date": 1794856614642,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.10078388597985,
+            "unit": "us/iter",
+            "extra": "iterations: 41256\ncpu: 17.098927768082223 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 105.27875165165197,
+            "unit": "us/iter",
+            "extra": "iterations: 6660\ncpu: 105.27856006006007 us\nthreads: 1"
           }
         ]
       }
