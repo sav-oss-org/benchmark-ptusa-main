@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794828679682,
+  "lastUpdate": 1794829370030,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -127092,6 +127092,38 @@ window.BENCHMARK_DATA = {
             "value": 104.75484638783277,
             "unit": "us/iter",
             "extra": "iterations: 6575\ncpu: 104.71034479087454 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "13bc8668c51a23b870c8e300408d9aef97896334",
+          "message": "Fix uninitialized branch in `AsyncReceive`",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1535/commits/13bc8668c51a23b870c8e300408d9aef97896334"
+        },
+        "date": 1794829369491,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.051924523363887,
+            "unit": "us/iter",
+            "extra": "iterations: 76421\ncpu: 9.051432498920454 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 63.88944943919542,
+            "unit": "us/iter",
+            "extra": "iterations: 11323\ncpu: 63.86173319791574 us\nthreads: 1"
           }
         ]
       }
