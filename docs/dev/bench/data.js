@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794797249380,
+  "lastUpdate": 1794809845248,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -126148,6 +126148,42 @@ window.BENCHMARK_DATA = {
             "value": 60.88348299912825,
             "unit": "us/iter",
             "extra": "iterations: 11470\ncpu: 60.88181089799476 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "dbd520488b94897557655d93f35916ff000050f9",
+          "message": "Add `commit-check` `CI` policy and `CalVer` tag rules (#1506)\n\n* Add commit-check CI policy and CalVer tag rules\n\nEnforce the house commit style and the AI attribution trailers with\ncommit-check: a dry-run pull request check, local pre-commit hooks,\nand a CalVer tag pattern documented in CONTRIBUTING.md. Branch\nnaming stays snake_case and Conventional Commits stay off on\npurpose.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Fix review findings on the commit-check policy\n\nPin the CI policy with CCHK_* values, which win over the\nchecked-out cchk.toml, so a pull request can no longer weaken\nthe rules it is checked against by editing that config.\nTighten the CalVer tag pattern to the documented form: no `v`\nprefix, no leading zeroes, no serial `0`. Add\ndefault_install_hook_types so a plain `pre-commit install`\nsets up the commit-msg and pre-push stages. The dormant\n`v`-only release gate in cmake.yml is left for a separate\nchange because it cannot fire on tag pushes at all.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Extend CI gate to tags and touched files\n\nMirror the full policy into workflow env: CCHK_* values win over\nthe checked-out config, so a pull request can no longer weaken the\nrules it is checked against by editing cchk.toml.\n\nEnforce CalVer tag names with a date-aware pattern: 2026.4.31 and\n2026.2.31 are now rejected.\n\nAdd a push trigger for tags so tag checks run from the trusted\nbase-branch copy of the workflow, and a report-only file-check step\nthat runs commit-check -f for every non-merge commit a pull request\ntouches.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Resolve commit-check path from pipx env\n\nThe first CI run exited 127: GitHub runner images redirect pipx\nbinaries to /opt/pipx_bin instead of ~/.local/bin, and\ncontinue-on-error hid the missing tool. Ask pipx environment\nwhere it linked the app and fail loudly with an annotation when\nit is still absent.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Pin weakenable keys and require AI trailer pair\n\nPin CCHK_SUBJECT_MIN_LENGTH, CCHK_ALLOW_FIXUP_COMMITS and\nCCHK_ALLOW_REVERT_COMMITS to the effective defaults, and\nCCHK_AI_DISCLOSURE_PATTERN to empty: verified against a config\nthat loosens these keys, env values win, and the empty pattern\ndoes not weaken CC014.\n\nFile checks now cover merge commits too, because a conflict\nresolution can introduce files; -f was tested against a real\nmerge commit.\n\nAdd an AI trailer pair step: a commit that declares AI\nassistance must carry both provenance trailers. commit-check\nORs the trailer names (CC015 needs Co-authored-by in its list),\nso the house AND rule is enforced with git grep in CI. Tested\nagainst synthetic commits with the pair, without it, and with a\nhuman co-author only.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Scope pull-request write to the PR job\n\nSonarCloud failed the new-code security rating on the workflow\nlevel pull-requests write permission (S6622). Move it to the\ncommit-check job, the only consumer through the PR comment\nstep, and leave the tag job on the inherited read-only token.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Make PR titles imperative in contributing guide\n\nA squash merge builds the commit message from the pull request\ntitle, and the commit policy wants the imperative mood, so the\ntitle rule and its example must say so.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Document branch naming convention\n\nThe snake_case pattern with a leading verb or subsystem prefix\nis what every branch here follows, so write it down. Note that\nCI does not validate branch names: squash merges keep them out\nof history, and commit-check only knows the Conventional Branch\nformat.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Enumerate branch prefixes in contributing guide\n\nTurn the observed snake_case pattern into a closed prefix set\nmapped from the issue kind and the commit verb, and forbid\nConventional Branch slashes explicitly so the two vocabularies\ncannot mix.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Document issue classification layers\n\nWrite down the model agreed during the triage cleanup: the\nnative issue type is canonical, the bug and enhancement labels\nare GitHub's automatic mirror, and the template title prefixes\nare human-readable reflections. Record that bug classifies\nissues while bugfix classifies pull requests, so nobody merges\nthe two axes or introduces a third place for the kind.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Verify commit-check wheel hash in CI\n\nCopilot round 4 flagged the pipx install of commit-check from PyPI\nas an unverified supply-chain input.  Install from a sha256-pinned\nrequirements file with --require-hashes into a throwaway venv\ninstead, so pip refuses any digest mismatch before the tool runs.\nThe wheel has no runtime dependencies, so one digest covers the\nwhole install; Dependabot gains a pip ecosystem for .github/ and\nrewrites version and digest together.  The explicit venv path also\nretires the PIPX_BIN_DIR redirect workaround.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n---------\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-16T06:10:38Z",
+          "tree_id": "e4d97351686c2d0d0cb0a350532e03d71a7a8c54",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/dbd520488b94897557655d93f35916ff000050f9"
+        },
+        "date": 1794809844582,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.001061518355876,
+            "unit": "us/iter",
+            "extra": "iterations: 41321\ncpu: 16.996869315844247 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 111.45467648912543,
+            "unit": "us/iter",
+            "extra": "iterations: 6346\ncpu: 111.4203510872991 us\nthreads: 1"
           }
         ]
       }
