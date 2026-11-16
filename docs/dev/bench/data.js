@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794817343481,
+  "lastUpdate": 1794817665505,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -126576,6 +126576,38 @@ window.BENCHMARK_DATA = {
             "value": 85.60709862610611,
             "unit": "us/iter",
             "extra": "iterations: 8152\ncpu: 85.5959144995093 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "b9e4f8e4a9fd845c57c86086a323f8c39339c4f6",
+          "message": "Fix memory leaks in unit-test fixtures",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1537/commits/b9e4f8e4a9fd845c57c86086a323f8c39339c4f6"
+        },
+        "date": 1794817664934,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 10.996779188772804,
+            "unit": "us/iter",
+            "extra": "iterations: 63706\ncpu: 10.99610922048159 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 58.784857525757864,
+            "unit": "us/iter",
+            "extra": "iterations: 11939\ncpu: 58.78053522070525 us\nthreads: 1"
           }
         ]
       }
