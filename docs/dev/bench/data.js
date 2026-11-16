@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794819780354,
+  "lastUpdate": 1794820432046,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -126640,6 +126640,38 @@ window.BENCHMARK_DATA = {
             "value": 60.7180561583206,
             "unit": "us/iter",
             "extra": "iterations: 11521\ncpu: 60.71544648902004 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "947e034934457cf60d9c04a9ef808db31a11ed39",
+          "message": "Speed up `Sonar` analysis in merge queue",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1549/commits/947e034934457cf60d9c04a9ef808db31a11ed39"
+        },
+        "date": 1794820431596,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.838031732806265,
+            "unit": "us/iter",
+            "extra": "iterations: 42007\ncpu: 16.837210155450283 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 81.14282775346012,
+            "unit": "us/iter",
+            "extra": "iterations: 8453\ncpu: 81.14124642138884 us\nthreads: 1"
           }
         ]
       }
