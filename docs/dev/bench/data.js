@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794822701000,
+  "lastUpdate": 1794824409865,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -126740,6 +126740,38 @@ window.BENCHMARK_DATA = {
             "value": 81.81460112887758,
             "unit": "us/iter",
             "extra": "iterations: 8504\ncpu: 81.80667721072436 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "42c26b3a390a14b504433e5570487a012f476d98",
+          "message": "Add multiagent pipeline skill",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1515/commits/42c26b3a390a14b504433e5570487a012f476d98"
+        },
+        "date": 1794824409375,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.513356612963218,
+            "unit": "us/iter",
+            "extra": "iterations: 40035\ncpu: 17.511801049082052 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 105.20879231693124,
+            "unit": "us/iter",
+            "extra": "iterations: 6664\ncpu: 105.19697133853543 us\nthreads: 1"
           }
         ]
       }
