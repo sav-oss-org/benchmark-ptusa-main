@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794825469556,
+  "lastUpdate": 1794825491458,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -126964,6 +126964,38 @@ window.BENCHMARK_DATA = {
             "value": 81.3795372156684,
             "unit": "us/iter",
             "extra": "iterations: 8397\ncpu: 81.3726648803144 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "4a743aa90923817d7ab4e258270b193230569d46",
+          "message": "Isolate `PAC_info` tests from global state",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1546/commits/4a743aa90923817d7ab4e258270b193230569d46"
+        },
+        "date": 1794825491084,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 14.131542711683688,
+            "unit": "us/iter",
+            "extra": "iterations: 50677\ncpu: 14.129217889772482 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.29737240052867,
+            "unit": "us/iter",
+            "extra": "iterations: 8319\ncpu: 82.26647854309414 us\nthreads: 1"
           }
         ]
       }
