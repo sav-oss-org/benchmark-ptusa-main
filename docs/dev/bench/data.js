@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794915632393,
+  "lastUpdate": 1794916010580,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128558,6 +128558,42 @@ window.BENCHMARK_DATA = {
             "value": 61.02840566119678,
             "unit": "us/iter",
             "extra": "iterations: 11517\ncpu: 61.02381965789702 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "bc6814316f256c72d0919ffccdee84793e05fcc0",
+          "message": "Fix uninitialized branch in `AsyncReceive` (#1535)\n\n* Fix uninitialized branch in AsyncReceive\n\nMemcheck reported conditional jumps depending on uninitialised\nvalues inside linux_tcp_client::AsyncReceive() while running\ntcp_communicator.evaluate.\n\nThe branches there read the members asyncReceiveTime and\nnewDataIsAvailable, which the linux_tcp_client constructor never\ninitialised, so they held stack residue of the client object built\nin the test body.\n\nValue-initialise every private member of linux_tcp_client with\nbraces and zero-initialise the local res in AsyncReceive(). This is\ninitialisation only; no logic changes.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Value-initialize the newDataIsAvailable flag\n\nKeep the brace-initialization style uniform across all\nlinux_tcp_client members as requested in review.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n---------\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-17T11:32:29Z",
+          "tree_id": "55de75ccead228404d101267ecf81c4305b3896e",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/bc6814316f256c72d0919ffccdee84793e05fcc0"
+        },
+        "date": 1794916010220,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.863790647326349,
+            "unit": "us/iter",
+            "extra": "iterations: 50809\ncpu: 13.860931783739101 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 84.03145782146022,
+            "unit": "us/iter",
+            "extra": "iterations: 8547\ncpu: 84.00996618696618 us\nthreads: 1"
           }
         ]
       }
