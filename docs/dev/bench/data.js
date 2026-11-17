@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794895470516,
+  "lastUpdate": 1794895986832,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -127638,6 +127638,38 @@ window.BENCHMARK_DATA = {
             "value": 109.3672328982513,
             "unit": "us/iter",
             "extra": "iterations: 6359\ncpu: 109.35933621638624 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "9d4bdb1339846f3ba772abdbb92c733f5fa29162",
+          "message": "Add per-PR `concurrency` groups to CI workflows",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1556/commits/9d4bdb1339846f3ba772abdbb92c733f5fa29162"
+        },
+        "date": 1794895986523,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.894607147720386,
+            "unit": "us/iter",
+            "extra": "iterations: 58760\ncpu: 11.893257130701157 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 61.613579586132495,
+            "unit": "us/iter",
+            "extra": "iterations: 11453\ncpu: 61.60980948223173 us\nthreads: 1"
           }
         ]
       }
