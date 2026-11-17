@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794902838808,
+  "lastUpdate": 1794903026169,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128026,6 +128026,42 @@ window.BENCHMARK_DATA = {
             "value": 105.04582031970449,
             "unit": "us/iter",
             "extra": "iterations: 6506\ncpu: 105.01144159237627 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "1a21c0014203a9e5cafd31735fef71c9ad46b396",
+          "message": "Fix out-of-bounds read in io_device::get_DO (#1538)\n\nMemcheck reported an invalid 8-byte read exactly at the end of a\n`char_write_values` block in `io_device::get_DO`. The channel value\nread is bounds-checked, but the `G_DEBUG` diagnostics printed\n`char_write_values[index]` without checking the index. A reverse\nmotor that queries `DO_INDEX_REVERSE` (index 1) on a device\ninitialized with a single DO channel hit the error path and read\none element past the allocation made in `IO_channels::init`.\n\nBound the diagnostic by `DO_channels.count` so that an out-of-range\nindex never touches the pointer array; the function still returns\nthe same neutral 0 for absent channels.\n\nAudit: `io_device::init` and `init_and_alloc` pass identical counts\nto `IO_channels::init`, which allocates every array with exactly\n`count` elements, so there is no off-by-one in the allocation. The\nsame unguarded debug print exists in `set_DO` and `get_DI` and is\nleft as a follow-up.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-17T07:56:23Z",
+          "tree_id": "0e204b1d8418988b678fa3fb4e4aef60e35db815",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/1a21c0014203a9e5cafd31735fef71c9ad46b396"
+        },
+        "date": 1794903025607,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.766424204574086,
+            "unit": "us/iter",
+            "extra": "iterations: 59245\ncpu: 11.766007983796102 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.622642516268876,
+            "unit": "us/iter",
+            "extra": "iterations: 11525\ncpu: 60.61819956616051 us\nthreads: 1"
           }
         ]
       }
