@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794921293459,
+  "lastUpdate": 1794924203314,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128662,6 +128662,38 @@ window.BENCHMARK_DATA = {
             "value": 110.19319119975849,
             "unit": "us/iter",
             "extra": "iterations: 6318\ncpu: 110.19034726179171 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "70e4c63f3145d07019bf1e32ee3513ab3c58f309",
+          "message": "Run unit tests under `Valgrind` memcheck",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1518/commits/70e4c63f3145d07019bf1e32ee3513ab3c58f309"
+        },
+        "date": 1794924203003,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.743568427581847,
+            "unit": "us/iter",
+            "extra": "iterations: 59647\ncpu: 11.742629620936508 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.57044187260585,
+            "unit": "us/iter",
+            "extra": "iterations: 11492\ncpu: 60.56656543682561 us\nthreads: 1"
           }
         ]
       }
