@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794914541432,
+  "lastUpdate": 1794914612257,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128458,6 +128458,38 @@ window.BENCHMARK_DATA = {
             "value": 80.32737850034886,
             "unit": "us/iter",
             "extra": "iterations: 8642\ncpu: 80.30308632261051 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "6558c841d5101ac0da197b00fffa6499e1a5c040",
+          "message": "Require an AI footer on agent-posted comments",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1562/commits/6558c841d5101ac0da197b00fffa6499e1a5c040"
+        },
+        "date": 1794914611618,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.08715991538689,
+            "unit": "us/iter",
+            "extra": "iterations: 41128\ncpu: 17.08666103384556 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 111.1423393843758,
+            "unit": "us/iter",
+            "extra": "iterations: 6335\ncpu: 111.13805761641676 us\nthreads: 1"
           }
         ]
       }
