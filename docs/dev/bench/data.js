@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794916010580,
+  "lastUpdate": 1794918015612,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128594,6 +128594,42 @@ window.BENCHMARK_DATA = {
             "value": 84.03145782146022,
             "unit": "us/iter",
             "extra": "iterations: 8547\ncpu: 84.00996618696618 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d1241ce3bd823569e2523fb0af6f63a8a5c69c4f",
+          "message": "Diff the head in the docs-only detector (#1566)\n\nOn pull_request_target events actions/checkout defaults to the\npull request base, so the detector compared the base with itself,\nreported docs_only=true, and skipped the build matrix that fork\npull requests rely on for their required checks. Check out the\npull request head like sonar_build.yml already does.\n\nFixes #1565\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-17T15:17:29+03:00",
+          "tree_id": "2993e65f0eac32f74ffcc1192def1f25c6993419",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/d1241ce3bd823569e2523fb0af6f63a8a5c69c4f"
+        },
+        "date": 1794918015015,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.89585650529171,
+            "unit": "us/iter",
+            "extra": "iterations: 70581\ncpu: 9.895197036029526 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 74.64283492606522,
+            "unit": "us/iter",
+            "extra": "iterations: 9941\ncpu: 74.6352783422191 us\nthreads: 1"
           }
         ]
       }
