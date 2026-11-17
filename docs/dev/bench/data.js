@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794906674456,
+  "lastUpdate": 1794906905792,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128162,6 +128162,42 @@ window.BENCHMARK_DATA = {
             "value": 68.53276488376682,
             "unit": "us/iter",
             "extra": "iterations: 10582\ncpu: 68.53135305235304 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "8973fae2f0c7bba6d70a1876d6eea5e2c3d56c81",
+          "message": "Add per-PR `concurrency` groups to CI workflows (#1556)\n\n* Queue concurrent PR CI runs per PR\n\nDuplicate pull_request_target events for one head used to start\nseveral full Sonar analyses and build matrices at once. The\nconcurrent SonarCloud PR analyses of a single pull request cancel\neach other server-side and leave the SonarCloud Code Analysis check\ncancelled (#1528, #1529), and the duplicate matrices burn runners\ntwice. Add a workflow-level concurrency group keyed by pull request\nnumber (git ref for non-PR events) with cancel-in-progress disabled\nso such runs queue instead of racing or cancelling each other.\n\nRefs #1555.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Keep concurrency comments minimal\n\nThe detailed rationale lives in #1555 and the pull request\ndescription; inline comments only point at the issue to avoid\nbit-rotting workflow files over time.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n---------\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-17T09:03:44Z",
+          "tree_id": "aa4fc908e80a2544b0c0b9d488a4fc297b12c916",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/8973fae2f0c7bba6d70a1876d6eea5e2c3d56c81"
+        },
+        "date": 1794906905285,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.867560711538689,
+            "unit": "us/iter",
+            "extra": "iterations: 50707\ncpu: 13.86705725047824 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.53738589652819,
+            "unit": "us/iter",
+            "extra": "iterations: 8466\ncpu: 82.50733853059295 us\nthreads: 1"
           }
         ]
       }
