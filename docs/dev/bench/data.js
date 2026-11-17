@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794908296016,
+  "lastUpdate": 1794909425338,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128298,6 +128298,38 @@ window.BENCHMARK_DATA = {
             "value": 110.64233977986392,
             "unit": "us/iter",
             "extra": "iterations: 6360\ncpu: 110.63321383647796 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "f6d9e3aaffe86063ca6398f5f22ba6c1e5a03bb0",
+          "message": "Add `tools/build.py` build orchestration script",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1531/commits/f6d9e3aaffe86063ca6398f5f22ba6c1e5a03bb0"
+        },
+        "date": 1794909424740,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.516957586874167,
+            "unit": "us/iter",
+            "extra": "iterations: 39799\ncpu: 17.516460689967086 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 104.18374665278172,
+            "unit": "us/iter",
+            "extra": "iterations: 6722\ncpu: 104.18148661112765 us\nthreads: 1"
           }
         ]
       }
