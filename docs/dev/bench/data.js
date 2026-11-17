@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794902729790,
+  "lastUpdate": 1794902838808,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -127990,6 +127990,42 @@ window.BENCHMARK_DATA = {
             "value": 60.49265705902715,
             "unit": "us/iter",
             "extra": "iterations: 11588\ncpu: 60.48143148084224 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "438911c3c3af8247354f5d59f167f2830fe9da26",
+          "message": "Fix memory leaks in unit-test fixtures (#1537)\n\n* Fix memory leaks in unit-test fixtures\n\nFree the per-channel value cells allocated by io_device::init_and_alloc()\nin every test that allocates them, directly or through the fixture\nhelpers init_channels() and test_dev_err(). A file-local\nfree_channel_cells() helper deletes the cells and nulls the slots, so\nthe io_device destructor, which only frees the pointer arrays, stays\nsafe.\n\nClose leaked Lua states in cip_tech_def_tests.cpp by removing the\nredundant set_Lua( lua_open() ) calls that replaced the state each test\nhad already registered. The matching free_Lua() now closes that first\nstate instead of orphaning it.\n\nHistogram sites now covered: io_device::init_and_alloc,\niolink_dev_test::test_dev_err, and unclosed luaL_newstate states.\nRemaining sites need production-code fixes and are left for a follow-\nup: cipline_tech_object ctor (ncar1..4 buffers never deleted) and\ncip_stats::deserialize (map keys never freed).\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Free only test-owned channel cells in tests\n\nThe free_channel_cells() helper added in 06585351 deleted every\nchannel cell, but io_device::init_channel() replaces a cell with a\npointer into io_manager node buffers (io_manager::get_*_data return\naddresses inside the io_node arrays). Deleting those pointers caused\n\"double free\"/\"invalid pointer\" aborts in 38 tests on GCC and heap\ncorruption (0xc0000374) on MSVC.\n\nKeep the teardown only where cells can come solely from\nio_device::init_and_alloc(): DI_signal.get_state, the plain valve_*\ntests, and motor.direct_off (15 sites). Revert every helper call in\ntests and fixtures that bind channels through io_device::init_channel()\ndirectly or via init_channels()/test_dev_err(), including the\nDO1_test TearDown, all iolink_dev_test sites, the tm311/smfx20 cell\ndeletes, and test_temperature. bus_coupler_io_tests.cpp is reverted\nfully; its three tests bind channels via init_channel(). The helper\ncomment now documents this ownership constraint. Closing the\nremaining leaks requires a production-side ownership fix and stays\nfor a follow-up.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Split io_device::init_and_alloc by channel group\n\ninit_and_alloc allocated digital and analog cells in one call, so\nthe test-side cleanup helper had to know about all four channel\ngroups and their io_manager rebinding rules. Split it into\ninit_and_alloc_DO_DI() and init_and_alloc_AO_AI() so every test\nallocates only the groups it uses, and mirror the file-local\nfree_channel_cells() helper into free_DO_DI_cells() and\nfree_AO_AI_cells(). Digital free sites now release exactly what\ninit_and_alloc_DO_DI() allocated. The analog mirror stays unused\nfor now because every current AO/AI allocation is rebound via\ninit_channel() and becomes io_manager-owned; the motor\nsave_device test now frees its unbound digital cells too.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Remove unused free_AO_AI_cells test helper\n\nNo test frees analog cells today: every init_and_alloc_AO_AI()\ncaller rebinds its slots via io_device::init_channel(), so the\ncells become io_manager-owned. A [[maybe_unused]] static mirror\nhelper is dead weight and invites calls in the wrong place; it can\nbe reintroduced when an analog test actually needs it.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n---------\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-17T07:56:20Z",
+          "tree_id": "a7efb632468b988dcb32125eb47e080711d2a030",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/438911c3c3af8247354f5d59f167f2830fe9da26"
+        },
+        "date": 1794902838041,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.083830220294622,
+            "unit": "us/iter",
+            "extra": "iterations: 40582\ncpu: 17.07902589818146 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 105.04582031970449,
+            "unit": "us/iter",
+            "extra": "iterations: 6506\ncpu: 105.01144159237627 us\nthreads: 1"
           }
         ]
       }
