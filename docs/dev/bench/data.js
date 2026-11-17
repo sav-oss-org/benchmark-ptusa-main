@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794905153490,
+  "lastUpdate": 1794906674456,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128126,6 +128126,42 @@ window.BENCHMARK_DATA = {
             "value": 81.65373661971994,
             "unit": "us/iter",
             "extra": "iterations: 8520\ncpu: 81.62524072769953 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "865207d2daf313ff4d7379df33dfc5a3bb2509cc",
+          "message": "Exclude binary docs from Sonar scan (#1559)\n\nThe generic text and IaC sensors read the tracked binary\ndocumentation assets (17 png, 5 jpg, 2 chm, 2 eap) as UTF-8\nsource text, producing about 25 Invalid character warnings on\nevery sonar-scanner run. Excluding these extensions removes\nthe noise and the risk of it masking real encoding findings.\n\nRefs #1558.\n\n\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-17T09:03:04Z",
+          "tree_id": "2a1060c203bf3d29cefa297aef8d4bd71bc5cb71",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/865207d2daf313ff4d7379df33dfc5a3bb2509cc"
+        },
+        "date": 1794906673669,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 10.265914918158348,
+            "unit": "us/iter",
+            "extra": "iterations: 77161\ncpu: 10.265267401925843 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 68.53276488376682,
+            "unit": "us/iter",
+            "extra": "iterations: 10582\ncpu: 68.53135305235304 us\nthreads: 1"
           }
         ]
       }
