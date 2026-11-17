@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794914892671,
+  "lastUpdate": 1794915632393,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128522,6 +128522,42 @@ window.BENCHMARK_DATA = {
             "value": 60.741158924841756,
             "unit": "us/iter",
             "extra": "iterations: 11496\ncpu: 60.73359237995824 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "9514a893679ff9bbb8c249fddb91b3c8be29d153",
+          "message": "Skip heavy `CI` jobs on docs-only pull requests (#1552)\n\n* Skip heavy CI jobs on docs-only pull requests\n\nDocumentation-only PRs now skip the eight-job CMake matrix and\nthe CodeQL scan instead of paying for full builds and a 10-13\nminute code analysis.\n\nIn cmake.yml a small docs-only job diffs the PR against the\nbase branch and gates the build matrix with `if:` rather than\na workflow-level `paths-ignore`: the filter would stop the\nworkflow entirely and leave the required matrix checks\n\"Expected\" forever, while skipped jobs are reported as passing\nfor required checks. Because the skipped Ubuntu job also owns\nthe codecov upload, a fallback job posts a passing codecov/patch\ncommit status for docs-only changes.\n\nIn codeql-analysis.yml plain `paths-ignore` is safe: CodeQL is\nnot a required check, and the weekly schedule scan still covers\nall files, so docs-only push and pull-request events skip it.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Keep only the repository guard on docs-only job\n\nThe workflow triggers already limit where the detector matters, and\nnon-pull-request events compute docs_only=false via the empty base\nref, so the extra event-name condition is redundant.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n---------\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-17T11:31:53Z",
+          "tree_id": "62254a43ef35dd37396366cbc110462c2ebe0c25",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/9514a893679ff9bbb8c249fddb91b3c8be29d153"
+        },
+        "date": 1794915632112,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.795596860144597,
+            "unit": "us/iter",
+            "extra": "iterations: 59111\ncpu: 11.795182876283603 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 61.02840566119678,
+            "unit": "us/iter",
+            "extra": "iterations: 11517\ncpu: 61.02381965789702 us\nthreads: 1"
           }
         ]
       }
