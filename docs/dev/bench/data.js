@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794906905792,
+  "lastUpdate": 1794907208059,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128198,6 +128198,42 @@ window.BENCHMARK_DATA = {
             "value": 82.53738589652819,
             "unit": "us/iter",
             "extra": "iterations: 8466\ncpu: 82.50733853059295 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dzimitriy@gmail.com",
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3021995f3fdfe6856418fed46c44e32a8fefcab1",
+          "message": "Isolate `PAC_info` tests from global state (#1546)\n\n* Fix dangling tech_object in manager test\n\nThe test registered a stack tech_object into the singleton\nmanager, which never removes entries. When a later test in the\nsame process reached params_manager::final_init (e.g. PAC_info\nRESET_PARAMS), init_params() called lua_init_params() on the\nfreed stack object and crashed. Allocate the object instead,\nmirroring production where objects live in Lua and are not\ndestroyed by the manager.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Make PAC_info.save_device order-independent\n\nThe test compared a full SYSTEM dump with hardcoded parameter\nchange/save counters and communication error indicators, all of\nwhich neighbouring tests in a single-process run pollute. Build\nthe counter fields of the reference from their live values, put\nthe added node into a known active/OK state, drop watchdog\ndevices left by other tests, reset the communication indicators\nand enable emulation for the duration of the test, restoring\nthe previous emulation state at the end.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n---------\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-17T09:05:56Z",
+          "tree_id": "c73873551d3bb6a79e6515b5e779214f720847ed",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/3021995f3fdfe6856418fed46c44e32a8fefcab1"
+        },
+        "date": 1794907207453,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.842376286829968,
+            "unit": "us/iter",
+            "extra": "iterations: 59157\ncpu: 11.839866643000828 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.93300610713743,
+            "unit": "us/iter",
+            "extra": "iterations: 11462\ncpu: 60.88041938579653 us\nthreads: 1"
           }
         ]
       }
