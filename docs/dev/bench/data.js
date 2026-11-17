@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794899521651,
+  "lastUpdate": 1794900603121,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -127894,6 +127894,38 @@ window.BENCHMARK_DATA = {
             "value": 105.19664146672972,
             "unit": "us/iter",
             "extra": "iterations: 6627\ncpu: 105.1935039987928 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "fe1a5121868c740c1e1033baf78c87a90075ce4c",
+          "message": "Exclude binary docs from `sonar.exclusions`",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1559/commits/fe1a5121868c740c1e1033baf78c87a90075ce4c"
+        },
+        "date": 1794900602255,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.94794936892857,
+            "unit": "us/iter",
+            "extra": "iterations: 41279\ncpu: 16.940487584486057 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 105.12603902954615,
+            "unit": "us/iter",
+            "extra": "iterations: 6636\ncpu: 105.03405289330922 us\nthreads: 1"
           }
         ]
       }
