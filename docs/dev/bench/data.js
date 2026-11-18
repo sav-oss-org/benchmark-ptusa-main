@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794988656211,
+  "lastUpdate": 1795014725706,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -129398,6 +129398,40 @@ window.BENCHMARK_DATA = {
             "value": 107.64046231309,
             "unit": "us/iter",
             "extra": "iterations: 6554\ncpu: 107.60706377784562 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm",
+            "email": "dzimitriy@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "ae0ad6d3bca14c13037de92f45a4d1a0692e9876",
+          "message": "Attach release binaries to published `GitHub` releases (#1576)\n\n* Attach release archives to published releases\n\nReplace the unreachable `release`/`publish` job pair in\n`cmake.yml`, dead since the `push` trigger was removed in #1564,\nwith the `on: release` published event trigger. Publishing a\nGitHub release now builds the full matrix from the tag commit\nand uploads every produced archive (PLCnext cross builds\nincluded) as a release asset via `gh release upload --clobber`.\nThe write-scoped `contents: write` permission lives only in the\nnew `publish-release` job, so jobs that run pull request code\nkeep least privilege. The dead `push` alternative in the `build`\ncondition becomes the `release` event.\n\nCloses #1574\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Gate release builds on the CMake version tag\n\nRelease tags carry no v prefix: publishing a release must\nreference the four-component version declared in\n`project(ptusa_main VERSION ...)` because the binaries embed it\nthrough `version_info.h`. The detector job parses the version\nfrom the tag commit and exposes `version_ok`; a mismatch fails\nin seconds, skips the heavy matrix, and, through the build\nresult check, keeps `publish-release` from touching the\nrelease. All other events always pass the gate.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Draft release automatically on version bump\n\nThe `autocut-release` job listens on pushes to master, reads\nthe `project()` version, and drafts a release named exactly\nlike it when no release carries that name yet. Publishing the\ndraft stays the only manual step and drives the existing\n`on: release` pipeline; GitHub materializes the tag from the\nstored commit sha on publish, so the job passes the push sha\nrather than a moving branch name. The restored `push` trigger\nreaches no other job: every remaining condition skips push\nevents, so the heavy matrix stays off master merges.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* Stub skipped required checks on light PRs\n\nThe ruleset now requires the three matrix build names and\nthe SonarCloud result as status checks, but docs-only and\nworkflow-only pull requests never report them: a skipped\nmatrix job reports only the unexpanded template name, and\nthe SonarCloud action sits behind the workflow-only gate of\nits own workflow. Those contexts would sit in \"Expected\"\nforever. Extend the stub job to post passing commit\nstatuses for exactly the skipped required contexts; the\nSonarCloud stub is limited to workflow-only changes because\ndocs-only pull requests keep getting analyzed.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n---------\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-18T14:12:14Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/ae0ad6d3bca14c13037de92f45a4d1a0692e9876"
+        },
+        "date": 1795014725027,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 16.08418183481665,
+            "unit": "us/iter",
+            "extra": "iterations: 43721\ncpu: 16.08298277715514 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.36170399243548,
+            "unit": "us/iter",
+            "extra": "iterations: 8466\ncpu: 82.36109260571698 us\nthreads: 1"
           }
         ]
       }
