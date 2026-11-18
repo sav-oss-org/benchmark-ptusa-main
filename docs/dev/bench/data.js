@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794986155044,
+  "lastUpdate": 1794987277460,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -129206,6 +129206,38 @@ window.BENCHMARK_DATA = {
             "value": 105.4313097785174,
             "unit": "us/iter",
             "extra": "iterations: 6637\ncpu: 105.42594997739941 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "d59aa6cc8f69f13887c49ae7cc7cdb60e5a7d84f",
+          "message": "Fix flaky `ciplipline_tech_object.OpolRR` timer race",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1570/commits/d59aa6cc8f69f13887c49ae7cc7cdb60e5a7d84f"
+        },
+        "date": 1794987276690,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 14.014558055644047,
+            "unit": "us/iter",
+            "extra": "iterations: 50176\ncpu: 14.013721061862245 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.80597439544775,
+            "unit": "us/iter",
+            "extra": "iterations: 8436\ncpu: 82.79769013750591 us\nthreads: 1"
           }
         ]
       }
