@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794978139609,
+  "lastUpdate": 1794980176662,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -128886,6 +128886,38 @@ window.BENCHMARK_DATA = {
             "value": 81.23244403330318,
             "unit": "us/iter",
             "extra": "iterations: 8648\ncpu: 81.22171484736354 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "10463464d7844b9bf8561b1267bdbec72648b67b",
+          "message": "Skip heavy CI jobs on workflow-only pull requests",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1568/commits/10463464d7844b9bf8561b1267bdbec72648b67b"
+        },
+        "date": 1794980176109,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.733335671847446,
+            "unit": "us/iter",
+            "extra": "iterations: 59582\ncpu: 11.733011060387367 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.43900571527144,
+            "unit": "us/iter",
+            "extra": "iterations: 11548\ncpu: 60.43174740214755 us\nthreads: 1"
           }
         ]
       }
