@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794982715043,
+  "lastUpdate": 1794983586356,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -129046,6 +129046,38 @@ window.BENCHMARK_DATA = {
             "value": 61.25734475788888,
             "unit": "us/iter",
             "extra": "iterations: 11379\ncpu: 61.233985323842155 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "25a17de2155ae847c63d6321f7af1ce85e89e820",
+          "message": "Run CIP timing tests on a virtual clock",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1571/commits/25a17de2155ae847c63d6321f7af1ce85e89e820"
+        },
+        "date": 1794983585579,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.113331613920932,
+            "unit": "us/iter",
+            "extra": "iterations: 77352\ncpu: 9.112515927189987 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 65.66033081020855,
+            "unit": "us/iter",
+            "extra": "iterations: 10701\ncpu: 65.65764554714512 us\nthreads: 1"
           }
         ]
       }
