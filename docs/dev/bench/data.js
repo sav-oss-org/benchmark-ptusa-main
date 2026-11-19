@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795095053977,
+  "lastUpdate": 1795098185803,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -129816,6 +129816,40 @@ window.BENCHMARK_DATA = {
             "value": 63.72130510483315,
             "unit": "us/iter",
             "extra": "iterations: 10970\ncpu: 63.69368960802187 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm",
+            "email": "dzimitriy@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "a7eb489e0e6f1d70a1b1ab7946e6521be5c56f48",
+          "message": "Change version to `2026.11.11.0` (#1578)",
+          "timestamp": "2026-11-19T13:39:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/a7eb489e0e6f1d70a1b1ab7946e6521be5c56f48"
+        },
+        "date": 1795098184985,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.866619310426795,
+            "unit": "us/iter",
+            "extra": "iterations: 50553\ncpu: 13.865448934781321 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.80266856061058,
+            "unit": "us/iter",
+            "extra": "iterations: 8448\ncpu: 82.79903693181818 us\nthreads: 1"
           }
         ]
       }
