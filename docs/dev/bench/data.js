@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795065360594,
+  "lastUpdate": 1795067907019,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -129464,6 +129464,38 @@ window.BENCHMARK_DATA = {
             "value": 105.22571351189919,
             "unit": "us/iter",
             "extra": "iterations: 6646\ncpu: 105.21991543785737 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "0d52ced506414dcd777b9083563ac03f0e5c7be6",
+          "message": "Exclude vendored trees from CodeQL analysis",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1581/commits/0d52ced506414dcd777b9083563ac03f0e5c7be6"
+        },
+        "date": 1795067906306,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.751394734193052,
+            "unit": "us/iter",
+            "extra": "iterations: 59592\ncpu: 11.751140371190765 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.655482707809284,
+            "unit": "us/iter",
+            "extra": "iterations: 11537\ncpu: 60.653265666984474 us\nthreads: 1"
           }
         ]
       }
