@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795075719096,
+  "lastUpdate": 1795076398782,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -129624,6 +129624,38 @@ window.BENCHMARK_DATA = {
             "value": 68.79525792790581,
             "unit": "us/iter",
             "extra": "iterations: 10154\ncpu: 68.78466791412252 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "1152252d8b4448be48f07de8752795d8f9e0635d",
+          "message": "Log error on failed forced params save",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1587/commits/1152252d8b4448be48f07de8752795d8f9e0635d"
+        },
+        "date": 1795076398233,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.891973550817857,
+            "unit": "us/iter",
+            "extra": "iterations: 50701\ncpu: 13.88830143389677 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 85.60475260129755,
+            "unit": "us/iter",
+            "extra": "iterations: 8169\ncpu: 85.57998690170155 us\nthreads: 1"
           }
         ]
       }
