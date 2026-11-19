@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795071943604,
+  "lastUpdate": 1795073583561,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -129560,6 +129560,38 @@ window.BENCHMARK_DATA = {
             "value": 81.19371649245421,
             "unit": "us/iter",
             "extra": "iterations: 8610\ncpu: 81.18908838559814 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "fbb231b3275db13aaa2a5bc0baaef40fca85ad79",
+          "message": "Value-initialize IP port locals in device",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1584/commits/fbb231b3275db13aaa2a5bc0baaef40fca85ad79"
+        },
+        "date": 1795073583230,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.30929725208295,
+            "unit": "us/iter",
+            "extra": "iterations: 40649\ncpu: 17.308693055179713 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 107.15155576035572,
+            "unit": "us/iter",
+            "extra": "iterations: 6510\ncpu: 107.1443147465438 us\nthreads: 1"
           }
         ]
       }
