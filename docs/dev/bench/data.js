@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795099364957,
+  "lastUpdate": 1795162936739,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -129914,6 +129914,38 @@ window.BENCHMARK_DATA = {
             "value": 67.44139562662362,
             "unit": "us/iter",
             "extra": "iterations: 10381\ncpu: 67.43190357383682 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "0b2ebb581d9209b50ab647818686fa6cfa225841",
+          "message": "Drop legacy 600 from pump running signal slot",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1600/commits/0b2ebb581d9209b50ab647818686fa6cfa225841"
+        },
+        "date": 1795162936339,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.650998543801936,
+            "unit": "us/iter",
+            "extra": "iterations: 51504\ncpu: 13.647936490369682 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 81.8732629239769,
+            "unit": "us/iter",
+            "extra": "iterations: 8550\ncpu: 81.85784584795321 us\nthreads: 1"
           }
         ]
       }
