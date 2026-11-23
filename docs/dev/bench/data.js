@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795439238129,
+  "lastUpdate": 1795440377389,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -130170,6 +130170,38 @@ window.BENCHMARK_DATA = {
             "value": 83.16897244655658,
             "unit": "us/iter",
             "extra": "iterations: 8420\ncpu: 83.16502600950118 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "9282260b2c80092e2cf0322ca3742194dcce15d4",
+          "message": "Sanitize CR, LF and TAB in G_LOG messages",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1627/commits/9282260b2c80092e2cf0322ca3742194dcce15d4"
+        },
+        "date": 1795440376784,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.252814046626613,
+            "unit": "us/iter",
+            "extra": "iterations: 61424\ncpu: 11.251850074889294 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 58.26717540035309,
+            "unit": "us/iter",
+            "extra": "iterations: 11927\ncpu: 58.26038878175567 us\nthreads: 1"
           }
         ]
       }
