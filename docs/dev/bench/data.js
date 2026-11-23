@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795443755042,
+  "lastUpdate": 1795455740524,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -130298,6 +130298,38 @@ window.BENCHMARK_DATA = {
             "value": 61.01956839622433,
             "unit": "us/iter",
             "extra": "iterations: 11448\ncpu: 61.01597449336128 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "2d244ad661804aac23549a73bbaf53293f21da38",
+          "message": "test: Migrate operation_mngr sleeps to fake clock",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1635/commits/2d244ad661804aac23549a73bbaf53293f21da38"
+        },
+        "date": 1795455739999,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.90511209841046,
+            "unit": "us/iter",
+            "extra": "iterations: 38939\ncpu: 17.903958113973136 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 107.66372080123219,
+            "unit": "us/iter",
+            "extra": "iterations: 6490\ncpu: 107.65424853620956 us\nthreads: 1"
           }
         ]
       }
