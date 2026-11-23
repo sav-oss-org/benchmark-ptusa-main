@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795460691737,
+  "lastUpdate": 1795467344141,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -130426,6 +130426,40 @@ window.BENCHMARK_DATA = {
             "value": 60.68418795097721,
             "unit": "us/iter",
             "extra": "iterations: 11503\ncpu: 60.681460575502044 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Dzmitry Ivaniuk",
+            "username": "idzm",
+            "email": "dzimitriy@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "d566b1e6cbedafe8ff47daccdde9cf2e94dc89e1",
+          "message": "ci: Add PR title and issue policy (#1591)\n\n* Add PR title and issue policy to commit-check\n\nImplement issue #1575: release notes stop needing manual\nchange-type classification once pull request titles carry a\nprefix from the closed set fix:, feat:, test:, build:, ci:,\ndeps:, docs:, chore:.\n\n- New pr-policy job in commit-check.yml validates the title\n  prefix (warning during rollout, TITLES_STRICT flips it to\n  errors) and requires a linked issue for pull requests that\n  touch PAC, common or test; infrastructure changes only warn,\n  dependabot and the no-issue label are exempt. The job never\n  runs in the merge queue because merge_group events do not\n  fire pull_request triggers.\n- autocut-release now builds the draft body itself, grouping\n  the merged pull requests by title prefix with a fallback to\n  --generate-notes when there is no previous release or the\n  compare is too large.\n- docs/CONTRIBUTING.md documents the prefixes, the issue label\n  mapping and the linked-issue rule.\n\nVerified locally: both workflow scripts run against stubbed\ngh responses; all title, linked-issue, exemption and note\ngrouping cases pass.\n\nCloses #1575\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* ci: Add perf to the PR title prefixes\n\nThe title policy mirrors the closed set of commit types,\nand #1597 added `perf` to that set. Without this sync a PR\ntitled `perf:` failed the title check while its squash\ncommit passed commit-check. Updated the title regex and its\nerror text, the release-notes grouping (`Performance`), and\nthe prefix list in `docs/CONTRIBUTING.md`.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n* docs: Describe the grouped release note bodies\n\nRELEASE_PROCESS.md was written before the autocut-release job\nstarted building the draft body itself, so it still promised\nGitHub-generated notes. Sync the English and the Russian ritual\nnotes with the prefix grouping, its fallback conditions, and the\neffect of regenerating notes via gh release edit.\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>\nAI-assisted: Zed agent (model: qwen3.8-flash-next-unsloth-ud-iq4_xs, local)\n\n---------\n\nCo-authored-by: Zed AI Agent <253101093+zed-agent@users.noreply.github.com>",
+          "timestamp": "2026-11-23T16:44:01Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/commit/d566b1e6cbedafe8ff47daccdde9cf2e94dc89e1"
+        },
+        "date": 1795467343598,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 14.133672098169098,
+            "unit": "us/iter",
+            "extra": "iterations: 49710\ncpu: 14.133567089116879 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 82.63731745655726,
+            "unit": "us/iter",
+            "extra": "iterations: 8461\ncpu: 82.63107835953198 us\nthreads: 1"
           }
         ]
       }
