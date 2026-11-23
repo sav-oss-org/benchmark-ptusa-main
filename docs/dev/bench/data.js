@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795440377389,
+  "lastUpdate": 1795440677124,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -130202,6 +130202,38 @@ window.BENCHMARK_DATA = {
             "value": 58.26717540035309,
             "unit": "us/iter",
             "extra": "iterations: 11927\ncpu: 58.26038878175567 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "7c7f39c3d567864d312e00c8fb270b819450d84f",
+          "message": "Validate recipe file paths against traversal",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1628/commits/7c7f39c3d567864d312e00c8fb270b819450d84f"
+        },
+        "date": 1795440676768,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 14.046339764415153,
+            "unit": "us/iter",
+            "extra": "iterations: 50173\ncpu: 14.0463769756642 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 83.94806927133207,
+            "unit": "us/iter",
+            "extra": "iterations: 8344\ncpu: 83.93882166826461 us\nthreads: 1"
           }
         ]
       }
