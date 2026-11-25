@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795596658035,
+  "lastUpdate": 1795597091576,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -130620,6 +130620,38 @@ window.BENCHMARK_DATA = {
             "value": 80.52916544286657,
             "unit": "us/iter",
             "extra": "iterations: 8716\ncpu: 80.52355598898576 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "626c23c26e1b9797dd653fc00cf7f6f5b4c6fce3",
+          "message": "fix: Correct `IFM.SMFx20` IO-Link flowmeter units",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1601/commits/626c23c26e1b9797dd653fc00cf7f6f5b4c6fce3"
+        },
+        "date": 1795597090784,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.226493455594657,
+            "unit": "us/iter",
+            "extra": "iterations: 40569\ncpu: 17.22557420690675 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 109.40503312180698,
+            "unit": "us/iter",
+            "extra": "iterations: 6461\ncpu: 109.39772914409534 us\nthreads: 1"
           }
         ]
       }
