@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795597586195,
+  "lastUpdate": 1795597647365,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -130748,6 +130748,38 @@ window.BENCHMARK_DATA = {
             "value": 108.04446069698459,
             "unit": "us/iter",
             "extra": "iterations: 6399\ncpu: 108.03790889201439 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "6d98c56567f0553bff4bd1c49b784adddf47459d",
+          "message": "fix: Propagate `DI_VIRT` through `P_DT` filter",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1638/commits/6d98c56567f0553bff4bd1c49b784adddf47459d"
+        },
+        "date": 1795597646866,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 14.19709878330752,
+            "unit": "us/iter",
+            "extra": "iterations: 49725\ncpu: 14.195625741578683 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 86.24633893317134,
+            "unit": "us/iter",
+            "extra": "iterations: 8155\ncpu: 86.23307529123238 us\nthreads: 1"
           }
         ]
       }
