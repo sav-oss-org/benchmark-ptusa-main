@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795601153088,
+  "lastUpdate": 1795601265100,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131516,6 +131516,38 @@ window.BENCHMARK_DATA = {
             "value": 106.17799969710296,
             "unit": "us/iter",
             "extra": "iterations: 6603\ncpu: 106.16456534908377 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "771bda0628bdb3d7d8e022ca0d9dffef608196e8",
+          "message": "feat: Add experimental `Tracy` profiler",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1554/commits/771bda0628bdb3d7d8e022ca0d9dffef608196e8"
+        },
+        "date": 1795601264640,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.321292136491856,
+            "unit": "us/iter",
+            "extra": "iterations: 40618\ncpu: 17.319891772120737 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 106.24810991509638,
+            "unit": "us/iter",
+            "extra": "iterations: 6596\ncpu: 106.24354533050334 us\nthreads: 1"
           }
         ]
       }
