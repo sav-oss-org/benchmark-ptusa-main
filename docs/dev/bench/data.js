@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795599187643,
+  "lastUpdate": 1795599331179,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131036,6 +131036,38 @@ window.BENCHMARK_DATA = {
             "value": 82.3841976317357,
             "unit": "us/iter",
             "extra": "iterations: 8445\ncpu: 82.37570148016577 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "3ca29ff92e5bcbe84d30ebfe48699b62fbdf219a",
+          "message": "build: Add `misc/bi_all.cmake` preset matrix",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1551/commits/3ca29ff92e5bcbe84d30ebfe48699b62fbdf219a"
+        },
+        "date": 1795599330669,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.166789065621865,
+            "unit": "us/iter",
+            "extra": "iterations: 62555\ncpu: 11.166453057309567 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 64.68326471408623,
+            "unit": "us/iter",
+            "extra": "iterations: 10755\ncpu: 64.67631278475127 us\nthreads: 1"
           }
         ]
       }
