@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795600223053,
+  "lastUpdate": 1795600254392,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131292,6 +131292,38 @@ window.BENCHMARK_DATA = {
             "value": 83.82604486479734,
             "unit": "us/iter",
             "extra": "iterations: 8247\ncpu: 83.8186247120165 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "8430d366b80703e1dacc346739d2851a90a85611",
+          "message": "build: Add `unixODBC` build from source",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1424/commits/8430d366b80703e1dacc346739d2851a90a85611"
+        },
+        "date": 1795600253726,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 14.204106122199484,
+            "unit": "us/iter",
+            "extra": "iterations: 49198\ncpu: 14.204009349973575 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 83.0997651317383,
+            "unit": "us/iter",
+            "extra": "iterations: 8426\ncpu: 83.07388048896274 us\nthreads: 1"
           }
         ]
       }
