@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795599674400,
+  "lastUpdate": 1795599704075,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131164,6 +131164,38 @@ window.BENCHMARK_DATA = {
             "value": 60.44242187364374,
             "unit": "us/iter",
             "extra": "iterations: 11539\ncpu: 60.4387149666349 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "3404a5168dcb2f732b5608b3546387ae0cd0aa24",
+          "message": "feat: Add `LMDB` support",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1432/commits/3404a5168dcb2f732b5608b3546387ae0cd0aa24"
+        },
+        "date": 1795599703526,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.771253797989349,
+            "unit": "us/iter",
+            "extra": "iterations: 59571\ncpu: 11.770834046767723 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.37807105808958,
+            "unit": "us/iter",
+            "extra": "iterations: 11568\ncpu: 60.37555826417704 us\nthreads: 1"
           }
         ]
       }
