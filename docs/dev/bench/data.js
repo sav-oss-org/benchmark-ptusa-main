@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795599647433,
+  "lastUpdate": 1795599674400,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131132,6 +131132,38 @@ window.BENCHMARK_DATA = {
             "value": 106.22460030487926,
             "unit": "us/iter",
             "extra": "iterations: 6560\ncpu: 106.20872606707317 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "ee4fdb0cf0a38336aefc3936d51e1c3c2b8884bb",
+          "message": "chore: Refactor valve and digital I/O management",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1431/commits/ee4fdb0cf0a38336aefc3936d51e1c3c2b8884bb"
+        },
+        "date": 1795599673823,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.869020772619884,
+            "unit": "us/iter",
+            "extra": "iterations: 59020\ncpu: 11.868586123348019 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.44242187364374,
+            "unit": "us/iter",
+            "extra": "iterations: 11539\ncpu: 60.4387149666349 us\nthreads: 1"
           }
         ]
       }
