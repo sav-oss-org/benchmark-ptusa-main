@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795598373585,
+  "lastUpdate": 1795598907573,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -130940,6 +130940,38 @@ window.BENCHMARK_DATA = {
             "value": 82.50271803748322,
             "unit": "us/iter",
             "extra": "iterations: 8377\ncpu: 82.49764999403126 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "1c267fd4ac600ef0deb737936209f06630f10e5c",
+          "message": "fix: Escape `CR` and `LF` in `G_LOG` messages",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1627/commits/1c267fd4ac600ef0deb737936209f06630f10e5c"
+        },
+        "date": 1795598907039,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.427311373420366,
+            "unit": "us/iter",
+            "extra": "iterations: 72010\ncpu: 9.426516317178171 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 67.86000519780724,
+            "unit": "us/iter",
+            "extra": "iterations: 10389\ncpu: 67.85298411781692 us\nthreads: 1"
           }
         ]
       }
