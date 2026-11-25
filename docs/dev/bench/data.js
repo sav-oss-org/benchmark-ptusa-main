@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795597647365,
+  "lastUpdate": 1795598005581,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -130780,6 +130780,38 @@ window.BENCHMARK_DATA = {
             "value": 86.24633893317134,
             "unit": "us/iter",
             "extra": "iterations: 8155\ncpu: 86.23307529123238 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "committer": {
+            "name": "idzm",
+            "username": "idzm"
+          },
+          "id": "9ed83c7e29581e3f9aed2af377d08de77f57999f",
+          "message": "feat: Add `PSD_SC_IOL S9 AE` signal tower support",
+          "timestamp": "2026-11-12T09:07:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1517/commits/9ed83c7e29581e3f9aed2af377d08de77f57999f"
+        },
+        "date": 1795598005049,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.25207784921445,
+            "unit": "us/iter",
+            "extra": "iterations: 40283\ncpu: 17.251021026239357 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 110.2458368121479,
+            "unit": "us/iter",
+            "extra": "iterations: 6324\ncpu: 110.23449794433903 us\nthreads: 1"
           }
         ]
       }
