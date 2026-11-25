@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795598005581,
+  "lastUpdate": 1795598036410,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -130812,6 +130812,38 @@ window.BENCHMARK_DATA = {
             "value": 110.2458368121479,
             "unit": "us/iter",
             "extra": "iterations: 6324\ncpu: 110.23449794433903 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "4046bd9a4e55e1b557bc858dfc9a383cab23f923",
+          "message": "fix: Free cipline buffers and `cip_stats` keys",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1637/commits/4046bd9a4e55e1b557bc858dfc9a383cab23f923"
+        },
+        "date": 1795598035647,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.930388692935484,
+            "unit": "us/iter",
+            "extra": "iterations: 49615\ncpu: 13.928785427794015 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 83.363837899267,
+            "unit": "us/iter",
+            "extra": "iterations: 8359\ncpu: 83.35299868405312 us\nthreads: 1"
           }
         ]
       }
