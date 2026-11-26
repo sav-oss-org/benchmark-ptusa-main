@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795700483212,
+  "lastUpdate": 1795701459053,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131840,6 +131840,38 @@ window.BENCHMARK_DATA = {
             "value": 85.62383689415448,
             "unit": "us/iter",
             "extra": "iterations: 8191\ncpu: 85.6126813575876 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "b49f4a415e5db09fc960c670b5f5e5875461c5f8",
+          "message": "fix: Reload line params after recipe reset",
+          "timestamp": "2026-11-26T13:21:30Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1645/commits/b49f4a415e5db09fc960c670b5f5e5875461c5f8"
+        },
+        "date": 1795701458264,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 17.130879108608568,
+            "unit": "us/iter",
+            "extra": "iterations: 41194\ncpu: 17.12918684759917 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 109.99949976631603,
+            "unit": "us/iter",
+            "extra": "iterations: 6419\ncpu: 109.99730861504906 us\nthreads: 1"
           }
         ]
       }
