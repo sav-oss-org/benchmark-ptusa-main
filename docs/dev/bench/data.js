@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795674777820,
+  "lastUpdate": 1795676189204,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131708,6 +131708,74 @@ window.BENCHMARK_DATA = {
             "value": 60.754823687400176,
             "unit": "us/iter",
             "extra": "iterations: 11542\ncpu: 60.743330878530585 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "52fdc120f461715047fdde7cce32c3a63c4774bb",
+          "message": "fix: Escape `CR` and `LF` in `G_LOG` messages",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1627/commits/52fdc120f461715047fdde7cce32c3a63c4774bb"
+        },
+        "date": 1795676188421,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 13.845935565632058,
+            "unit": "us/iter",
+            "extra": "iterations: 50501\ncpu: 13.8447576483634 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 88.35604062777453,
+            "unit": "us/iter",
+            "extra": "iterations: 7901\ncpu: 88.34973788128083 us\nthreads: 1"
+          },
+          {
+            "name": "write_log_record/\"clean\"/40",
+            "value": 24.571764656012373,
+            "unit": "ns/iter",
+            "extra": "iterations: 28355957\ncpu: 24.569295333604853 ns\nthreads: 1"
+          },
+          {
+            "name": "write_log_record/\"clean\"/200",
+            "value": 119.30537280655288,
+            "unit": "ns/iter",
+            "extra": "iterations: 5874937\ncpu: 119.30143250897835 ns\nthreads: 1"
+          },
+          {
+            "name": "write_log_record/\"clean\"/1000",
+            "value": 563.81923881585,
+            "unit": "ns/iter",
+            "extra": "iterations: 1259485\ncpu: 563.7458453256686 ns\nthreads: 1"
+          },
+          {
+            "name": "write_log_record/\"LF every 10th char\"/40",
+            "value": 24.66720213283004,
+            "unit": "ns/iter",
+            "extra": "iterations: 28484215\ncpu: 24.665149873359667 ns\nthreads: 1"
+          },
+          {
+            "name": "write_log_record/\"LF every 10th char\"/200",
+            "value": 119.30625780493888,
+            "unit": "ns/iter",
+            "extra": "iterations: 5868879\ncpu: 119.29274585487288 ns\nthreads: 1"
+          },
+          {
+            "name": "write_log_record/\"LF every 10th char\"/1000",
+            "value": 556.5360018756658,
+            "unit": "ns/iter",
+            "extra": "iterations: 1258240\ncpu: 556.4817761317391 ns\nthreads: 1"
           }
         ]
       }
