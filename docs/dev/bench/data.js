@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795670942759,
+  "lastUpdate": 1795674777820,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131676,6 +131676,38 @@ window.BENCHMARK_DATA = {
             "value": 111.35066810001555,
             "unit": "us/iter",
             "extra": "iterations: 6279\ncpu: 111.34087338748209 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "b678f605907d63fd0b8b8d018cd539847de89ce6",
+          "message": "feat: Stamp builds with git commit ID",
+          "timestamp": "2026-11-19T13:56:17Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1648/commits/b678f605907d63fd0b8b8d018cd539847de89ce6"
+        },
+        "date": 1795674777462,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.85199442840507,
+            "unit": "us/iter",
+            "extra": "iterations: 59229\ncpu: 11.851614243022844 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.754823687400176,
+            "unit": "us/iter",
+            "extra": "iterations: 11542\ncpu: 60.743330878530585 us\nthreads: 1"
           }
         ]
       }
