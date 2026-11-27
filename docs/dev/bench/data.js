@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795701459053,
+  "lastUpdate": 1795757131437,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131872,6 +131872,38 @@ window.BENCHMARK_DATA = {
             "value": 109.99949976631603,
             "unit": "us/iter",
             "extra": "iterations: 6419\ncpu: 109.99730861504906 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "aeeaf269f7cf65da2ff29b0cc7e31d0cc6d40ae8",
+          "message": "test: Serialize params-file tests in ctest",
+          "timestamp": "2026-11-26T13:21:30Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1653/commits/aeeaf269f7cf65da2ff29b0cc7e31d0cc6d40ae8"
+        },
+        "date": 1795757130662,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.658931748086381,
+            "unit": "us/iter",
+            "extra": "iterations: 72628\ncpu: 9.65833031337776 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 63.83390707236408,
+            "unit": "us/iter",
+            "extra": "iterations: 10944\ncpu: 63.83000758406434 us\nthreads: 1"
           }
         ]
       }
