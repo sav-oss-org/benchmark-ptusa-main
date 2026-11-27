@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795770112042,
+  "lastUpdate": 1795770276885,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -132352,6 +132352,38 @@ window.BENCHMARK_DATA = {
             "value": 110.3697918317508,
             "unit": "us/iter",
             "extra": "iterations: 6562\ncpu: 110.35816031697654 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "d4754517303ce4da564b65cf67f43e88fdd14ec8",
+          "message": "test: Isolate params file tests in temp directories",
+          "timestamp": "2026-11-26T13:21:30Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1660/commits/d4754517303ce4da564b65cf67f43e88fdd14ec8"
+        },
+        "date": 1795770276320,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 11.708713804938743,
+            "unit": "us/iter",
+            "extra": "iterations: 59725\ncpu: 11.708094951862707 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 60.344940167254215,
+            "unit": "us/iter",
+            "extra": "iterations: 11599\ncpu: 60.33660237951548 us\nthreads: 1"
           }
         ]
       }
