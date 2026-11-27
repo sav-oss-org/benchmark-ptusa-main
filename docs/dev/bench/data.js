@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795757844177,
+  "lastUpdate": 1795759351899,
   "repoUrl": "https://github.com/sav-oss-org/ptusa_main",
   "entries": {
     "C++ Benchmark": [
@@ -131936,6 +131936,38 @@ window.BENCHMARK_DATA = {
             "value": 107.41496140297028,
             "unit": "us/iter",
             "extra": "iterations: 6529\ncpu: 107.41340128656762 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "committer": {
+            "name": "sav-oss-org",
+            "username": "sav-oss-org"
+          },
+          "id": "b081c460fd07ae91d98869cbf0defe41e5c74646",
+          "message": "build: Compose gtest lock filters with list(JOIN)",
+          "timestamp": "2026-11-26T13:21:30Z",
+          "url": "https://github.com/sav-oss-org/ptusa_main/pull/1656/commits/b081c460fd07ae91d98869cbf0defe41e5c74646"
+        },
+        "date": 1795759351346,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "write_devices_service/\"no compression\"",
+            "value": 9.99498145327792,
+            "unit": "us/iter",
+            "extra": "iterations: 70255\ncpu: 9.99442999074799 us\nthreads: 1"
+          },
+          {
+            "name": "write_devices_service/\"with compression\"",
+            "value": 68.92927525854992,
+            "unit": "us/iter",
+            "extra": "iterations: 10056\ncpu: 68.92520087509943 us\nthreads: 1"
           }
         ]
       }
